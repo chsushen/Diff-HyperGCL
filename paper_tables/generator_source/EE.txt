@@ -1,0 +1,4291 @@
+MODALITY = all
+FEATURE_SUM = 2873259.0
+num_hyperedges seems not match! 2
+
+===== TRAIN COUNTS =====
+tensor([ 67,  27,  63,  53,  23,  44,  34, 148,  47,  33,  36, 138,  58,  25,
+         46,  21, 118,  40,  33,  58])
+
+===== VALID COUNTS =====
+tensor([13,  2, 12,  9,  4, 13, 11, 30, 11,  6,  9, 32,  8,  4,  8,  7, 15,  6,
+         8, 14])
+
+===== TEST COUNTS =====
+tensor([ 42,  30,  61,  48,  24,  38,  43, 108,  59,  13,  15, 114,  39,  22,
+         31,  23,  80,  27,  21,  52])
+
+===== MODEL PARAMETERS =====
+Backbone Parameters: 407210
+
+===== COMPUTATION COST =====
+MACS = 947957760.0
+FLOPS = 1895915520.0
+Generator Parameters: 437955
+Total Parameters: 845165
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4093616306781769
+std = 0.5927101373672485
+min = 0.0
+max = 2.784207820892334
+Inference Time (ms): 5.563
+
+===== LOGIT DEBUG =====
+out shape: torch.Size([2224, 20])
+first row: tensor([-3.1398, -3.0103, -2.9110, -3.2440, -3.0970, -3.1945, -2.7603, -2.9625,
+        -3.1994, -3.0152, -2.8136, -2.7434, -3.0493, -3.0621, -2.9599, -2.9559,
+        -3.0025, -2.8083, -3.2093, -2.9898])
+pred counts: tensor([   0,    0,    0,    0,    0,    0,    5,    0,    0,    0,  500, 1719])
+
+===== EMBEDDING CHECK =====
+logits mean = -3.008371114730835
+logits std  = 0.15813441574573517
+logits min  = -3.411365032196045
+logits max  = -2.4875550270080566
+unique predicted classes = tensor([ 6, 10, 11], device='cuda:0')
+num predicted classes = 3
+prob mean = 0.05000000074505806
+prob std  = 0.008079828694462776
+Epoch=0 Loss=3.814855 CL=8.272018
+
+===== DATA DEBUG BEFORE EVAL =====
+edge min: 2224
+edge max: 6671
+edge shape: torch.Size([2, 15568])
+x sum: -132598.078125
+
+===== OUT DEBUG =====
+result[6] shape: torch.Size([2224, 20])
+first logits:
+tensor([-3.1398, -3.0103, -2.9110, -3.2440, -3.0970, -3.1945, -2.7603, -2.9625,
+        -3.1994, -3.0152, -2.8136, -2.7434, -3.0493, -3.0621, -2.9599, -2.9559,
+        -3.0025, -2.8083, -3.2093, -2.9898])
+
+===== EVAL DEBUG =====
+edge min: 2224
+edge max: 6671
+train_acc = 0.07284172661870504
+valid_acc = 0.11261261261261261
+test_acc = 0.07640449438202247
+eval pred counts:
+tensor([   0,    0,    0,    0,    0,    0,    5,    0,    0,    0,  500, 1719])
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41214731335639954
+std = 0.5817059874534607
+min = 0.0
+max = 2.8436343669891357
+Inference Time (ms): 6.994
+Epoch=1 Loss=3.761895 CL=8.183491
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41372260451316833
+std = 0.5685521960258484
+min = 0.0
+max = 2.903759479522705
+Inference Time (ms): 6.822
+Epoch=2 Loss=3.721052 CL=8.074321
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4162502884864807
+std = 0.567701518535614
+min = 0.0
+max = 3.0160961151123047
+Inference Time (ms): 7.111
+Epoch=3 Loss=3.675632 CL=7.939502
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41701120138168335
+std = 0.5724466443061829
+min = 0.0
+max = 3.157485246658325
+Inference Time (ms): 6.745
+Epoch=4 Loss=3.627256 CL=7.792983
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41709500551223755
+std = 0.5799800753593445
+min = 0.0
+max = 3.2758796215057373
+Inference Time (ms): 5.07
+Epoch=5 Loss=3.583700 CL=7.649785
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4174351394176483
+std = 0.5849466919898987
+min = 0.0
+max = 3.3351120948791504
+Inference Time (ms): 6.998
+Epoch=6 Loss=3.538597 CL=7.504625
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4179858863353729
+std = 0.5883551836013794
+min = 0.0
+max = 3.3921544551849365
+Inference Time (ms): 7.141
+Epoch=7 Loss=3.493583 CL=7.373458
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.418070912361145
+std = 0.5921554565429688
+min = 0.0
+max = 3.408582925796509
+Inference Time (ms): 6.471
+Epoch=8 Loss=3.447735 CL=7.248307
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41818326711654663
+std = 0.59833824634552
+min = 0.0
+max = 3.479884624481201
+Inference Time (ms): 5.387
+Epoch=9 Loss=3.402398 CL=7.146544
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41854721307754517
+std = 0.6054245233535767
+min = 0.0
+max = 3.506378173828125
+Inference Time (ms): 6.109
+Epoch=10 Loss=3.357536 CL=7.064173
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4188801944255829
+std = 0.6112704873085022
+min = 0.0
+max = 3.6018362045288086
+Inference Time (ms): 7.18
+Epoch=11 Loss=3.315532 CL=7.014062
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41912513971328735
+std = 0.6157382726669312
+min = 0.0
+max = 3.6365344524383545
+Inference Time (ms): 7.459
+Epoch=12 Loss=3.272188 CL=6.969182
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4188350439071655
+std = 0.6206879615783691
+min = 0.0
+max = 3.625697374343872
+Inference Time (ms): 5.411
+Epoch=13 Loss=3.230196 CL=6.943695
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41791418194770813
+std = 0.6270914673805237
+min = 0.0
+max = 3.8636014461517334
+Inference Time (ms): 7.138
+Epoch=14 Loss=3.185194 CL=6.918502
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41735851764678955
+std = 0.6329799294471741
+min = 0.0
+max = 3.9114181995391846
+Inference Time (ms): 6.767
+Epoch=15 Loss=3.139167 CL=6.891645
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4172123074531555
+std = 0.6378738880157471
+min = 0.0
+max = 4.049651145935059
+Inference Time (ms): 5.182
+Epoch=16 Loss=3.095257 CL=6.873291
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4173182547092438
+std = 0.6429751515388489
+min = 0.0
+max = 4.139686584472656
+Inference Time (ms): 5.198
+Epoch=17 Loss=3.049785 CL=6.856034
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41778627038002014
+std = 0.6463384628295898
+min = 0.0
+max = 4.24310827255249
+Inference Time (ms): 4.991
+Epoch=18 Loss=3.003626 CL=6.848464
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41812819242477417
+std = 0.6506818532943726
+min = 0.0
+max = 4.326712131500244
+Inference Time (ms): 4.923
+Epoch=19 Loss=2.956095 CL=6.829983
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41846051812171936
+std = 0.6547526121139526
+min = 0.0
+max = 4.342473983764648
+Inference Time (ms): 5.041
+Epoch=20 Loss=2.910244 CL=6.814686
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4182172417640686
+std = 0.6602407693862915
+min = 0.0
+max = 4.326602458953857
+Inference Time (ms): 4.928
+Epoch=21 Loss=2.863327 CL=6.805825
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41805577278137207
+std = 0.6651340126991272
+min = 0.0
+max = 4.404533386230469
+Inference Time (ms): 4.957
+Epoch=22 Loss=2.815757 CL=6.797240
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4182246923446655
+std = 0.6694836020469666
+min = 0.0
+max = 4.277487754821777
+Inference Time (ms): 4.939
+Epoch=23 Loss=2.766050 CL=6.786902
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4180574417114258
+std = 0.6746820211410522
+min = 0.0
+max = 4.484369277954102
+Inference Time (ms): 4.819
+Epoch=24 Loss=2.717096 CL=6.777879
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41856610774993896
+std = 0.6787112951278687
+min = 0.0
+max = 4.459621906280518
+Inference Time (ms): 4.816
+Epoch=25 Loss=2.666825 CL=6.766733
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41843849420547485
+std = 0.6830215454101562
+min = 0.0
+max = 4.4649763107299805
+Inference Time (ms): 4.819
+Epoch=26 Loss=2.615018 CL=6.755515
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4181976020336151
+std = 0.688277542591095
+min = 0.0
+max = 4.326568126678467
+Inference Time (ms): 4.843
+Epoch=27 Loss=2.563581 CL=6.748194
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.418414443731308
+std = 0.6925198435783386
+min = 0.0
+max = 4.162938594818115
+Inference Time (ms): 4.804
+Epoch=28 Loss=2.511289 CL=6.742427
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4184264540672302
+std = 0.6964906454086304
+min = 0.0
+max = 4.36214017868042
+Inference Time (ms): 4.819
+Epoch=29 Loss=2.458935 CL=6.734402
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4183761477470398
+std = 0.7010940909385681
+min = 0.0
+max = 4.257419586181641
+Inference Time (ms): 5.418
+Epoch=30 Loss=2.407010 CL=6.731447
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4186334013938904
+std = 0.7048842310905457
+min = 0.0
+max = 4.199777126312256
+Inference Time (ms): 5.344
+Epoch=31 Loss=2.355168 CL=6.732093
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41848108172416687
+std = 0.7088253498077393
+min = 0.0
+max = 4.343827724456787
+Inference Time (ms): 5.141
+Epoch=32 Loss=2.299408 CL=6.725525
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4177897870540619
+std = 0.7132939100265503
+min = 0.0
+max = 4.378012180328369
+Inference Time (ms): 6.671
+Epoch=33 Loss=2.250977 CL=6.727566
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41784149408340454
+std = 0.7176942229270935
+min = 0.0
+max = 4.261611461639404
+Inference Time (ms): 4.909
+Epoch=34 Loss=2.197597 CL=6.725858
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41853010654449463
+std = 0.7210407853126526
+min = 0.0
+max = 4.4098968505859375
+Inference Time (ms): 4.939
+Epoch=35 Loss=2.146559 CL=6.729337
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4191078245639801
+std = 0.7239236831665039
+min = 0.0
+max = 4.6143903732299805
+Inference Time (ms): 4.891
+Epoch=36 Loss=2.097029 CL=6.727418
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41970404982566833
+std = 0.7260845899581909
+min = 0.0
+max = 4.460580348968506
+Inference Time (ms): 4.916
+Epoch=37 Loss=2.044772 CL=6.724028
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42035987973213196
+std = 0.7296370267868042
+min = 0.0
+max = 4.430538177490234
+Inference Time (ms): 4.863
+Epoch=38 Loss=1.994016 CL=6.724239
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42177051305770874
+std = 0.7316590547561646
+min = 0.0
+max = 4.403944492340088
+Inference Time (ms): 4.861
+Epoch=39 Loss=1.943237 CL=6.720773
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4226914942264557
+std = 0.7337571382522583
+min = 0.0
+max = 4.393205165863037
+Inference Time (ms): 4.916
+Epoch=40 Loss=1.896383 CL=6.725104
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42367374897003174
+std = 0.736771285533905
+min = 0.0
+max = 4.467530250549316
+Inference Time (ms): 4.791
+Epoch=41 Loss=1.850991 CL=6.723270
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4244840443134308
+std = 0.7400359511375427
+min = 0.0
+max = 4.3377532958984375
+Inference Time (ms): 4.796
+Epoch=42 Loss=1.803935 CL=6.719223
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.425641268491745
+std = 0.7436804175376892
+min = 0.0
+max = 4.352439880371094
+Inference Time (ms): 4.89
+Epoch=43 Loss=1.759549 CL=6.723467
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4265687167644501
+std = 0.7466538548469543
+min = 0.0
+max = 4.2899675369262695
+Inference Time (ms): 6.427
+Epoch=44 Loss=1.719502 CL=6.718234
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4278245270252228
+std = 0.7509316205978394
+min = 0.0
+max = 4.532508850097656
+Inference Time (ms): 5.197
+Epoch=45 Loss=1.677500 CL=6.713194
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.428198903799057
+std = 0.7550661563873291
+min = 0.0
+max = 4.284018516540527
+Inference Time (ms): 6.56
+Epoch=46 Loss=1.631503 CL=6.716358
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42919039726257324
+std = 0.7583500146865845
+min = 0.0
+max = 4.73930025100708
+Inference Time (ms): 6.484
+Epoch=47 Loss=1.591124 CL=6.710338
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43127837777137756
+std = 0.7606205940246582
+min = 0.0
+max = 4.892355918884277
+Inference Time (ms): 5.255
+Epoch=48 Loss=1.553045 CL=6.714408
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43205317854881287
+std = 0.7631309032440186
+min = 0.0
+max = 4.619130611419678
+Inference Time (ms): 6.709
+Epoch=49 Loss=1.517365 CL=6.707206
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43362367153167725
+std = 0.7655096650123596
+min = 0.0
+max = 4.289280414581299
+Inference Time (ms): 5.217
+Epoch=50 Loss=1.481012 CL=6.704986
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4342086613178253
+std = 0.7678302526473999
+min = 0.0
+max = 4.333664894104004
+Inference Time (ms): 6.409
+Epoch=51 Loss=1.445537 CL=6.703052
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43536174297332764
+std = 0.7688547372817993
+min = 0.0
+max = 4.650507926940918
+Inference Time (ms): 6.3
+Epoch=52 Loss=1.414450 CL=6.701315
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4368134140968323
+std = 0.7720988988876343
+min = 0.0
+max = 4.86278772354126
+Inference Time (ms): 6.83
+Epoch=53 Loss=1.380210 CL=6.695818
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4379694163799286
+std = 0.7743085622787476
+min = 0.0
+max = 4.515506744384766
+Inference Time (ms): 5.576
+Epoch=54 Loss=1.351106 CL=6.698121
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43922361731529236
+std = 0.7761588096618652
+min = 0.0
+max = 4.550582408905029
+Inference Time (ms): 5.252
+Epoch=55 Loss=1.319364 CL=6.692046
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44025543332099915
+std = 0.777661144733429
+min = 0.0
+max = 4.578976154327393
+Inference Time (ms): 5.162
+Epoch=56 Loss=1.291497 CL=6.690296
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4410659074783325
+std = 0.7798969149589539
+min = 0.0
+max = 4.529425621032715
+Inference Time (ms): 5.154
+Epoch=57 Loss=1.267979 CL=6.682714
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4419224262237549
+std = 0.7823610901832581
+min = 0.0
+max = 4.63918399810791
+Inference Time (ms): 5.101
+Epoch=58 Loss=1.238559 CL=6.682386
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44267407059669495
+std = 0.7844822406768799
+min = 0.0
+max = 4.494006633758545
+Inference Time (ms): 5.101
+Epoch=59 Loss=1.218654 CL=6.675987
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44308391213417053
+std = 0.7862693667411804
+min = 0.0
+max = 4.348025321960449
+Inference Time (ms): 4.922
+Epoch=60 Loss=1.197875 CL=6.681074
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4443775415420532
+std = 0.787794828414917
+min = 0.0
+max = 4.579758167266846
+Inference Time (ms): 4.949
+Epoch=61 Loss=1.170438 CL=6.679323
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4454633891582489
+std = 0.7877371311187744
+min = 0.0
+max = 4.721829891204834
+Inference Time (ms): 4.883
+Epoch=62 Loss=1.153361 CL=6.674769
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44641706347465515
+std = 0.788670003414154
+min = 0.0
+max = 4.150862693786621
+Inference Time (ms): 4.916
+Epoch=63 Loss=1.133491 CL=6.685085
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4477313160896301
+std = 0.7905412316322327
+min = 0.0
+max = 4.186174392700195
+Inference Time (ms): 4.917
+Epoch=64 Loss=1.113758 CL=6.675033
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4486778974533081
+std = 0.7907336354255676
+min = 0.0
+max = 4.189941883087158
+Inference Time (ms): 4.915
+Epoch=65 Loss=1.104515 CL=6.678766
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.449506014585495
+std = 0.7926132678985596
+min = 0.0
+max = 4.617269515991211
+Inference Time (ms): 4.91
+Epoch=66 Loss=1.082793 CL=6.675666
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45014533400535583
+std = 0.7938041090965271
+min = 0.0
+max = 4.5557780265808105
+Inference Time (ms): 4.863
+Epoch=67 Loss=1.069950 CL=6.665915
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45017531514167786
+std = 0.7959779500961304
+min = 0.0
+max = 4.6253132820129395
+Inference Time (ms): 4.848
+Epoch=68 Loss=1.052757 CL=6.671463
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4509609341621399
+std = 0.7973350882530212
+min = 0.0
+max = 4.520946979522705
+Inference Time (ms): 4.816
+Epoch=69 Loss=1.033331 CL=6.666068
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4518919289112091
+std = 0.799128532409668
+min = 0.0
+max = 4.397721767425537
+Inference Time (ms): 4.805
+Epoch=70 Loss=1.014306 CL=6.660949
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45217329263687134
+std = 0.8006129264831543
+min = 0.0
+max = 4.553427696228027
+Inference Time (ms): 4.866
+Epoch=71 Loss=1.010448 CL=6.660688
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4526931047439575
+std = 0.802425742149353
+min = 0.0
+max = 4.277064323425293
+Inference Time (ms): 4.817
+Epoch=72 Loss=0.993376 CL=6.663936
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4528728723526001
+std = 0.8040725588798523
+min = 0.0
+max = 4.2473602294921875
+Inference Time (ms): 8.573
+Epoch=73 Loss=0.980881 CL=6.661294
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4534623920917511
+std = 0.8046091794967651
+min = 0.0
+max = 4.405695915222168
+Inference Time (ms): 7.245
+Epoch=74 Loss=0.964327 CL=6.658106
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4538182318210602
+std = 0.8052085041999817
+min = 0.0
+max = 4.383223533630371
+Inference Time (ms): 5.288
+Epoch=75 Loss=0.958173 CL=6.658378
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45371735095977783
+std = 0.8057315349578857
+min = 0.0
+max = 4.4539408683776855
+Inference Time (ms): 4.902
+Epoch=76 Loss=0.942529 CL=6.665534
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45410221815109253
+std = 0.8081645369529724
+min = 0.0
+max = 4.369369029998779
+Inference Time (ms): 5.022
+Epoch=77 Loss=0.926965 CL=6.659983
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45458319783210754
+std = 0.8089442849159241
+min = 0.0
+max = 4.481364727020264
+Inference Time (ms): 5.023
+Epoch=78 Loss=0.927444 CL=6.663477
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4556197226047516
+std = 0.8102437853813171
+min = 0.0
+max = 4.294349670410156
+Inference Time (ms): 4.998
+Epoch=79 Loss=0.913438 CL=6.655978
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45543935894966125
+std = 0.8118544220924377
+min = 0.0
+max = 4.430047035217285
+Inference Time (ms): 4.945
+Epoch=80 Loss=0.901012 CL=6.651768
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45476409792900085
+std = 0.8133891224861145
+min = 0.0
+max = 4.4794230461120605
+Inference Time (ms): 4.916
+Epoch=81 Loss=0.891843 CL=6.652991
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4553966820240021
+std = 0.8132127523422241
+min = 0.0
+max = 4.4786882400512695
+Inference Time (ms): 4.922
+Epoch=82 Loss=0.877060 CL=6.645997
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45705968141555786
+std = 0.8130103349685669
+min = 0.0
+max = 4.451385021209717
+Inference Time (ms): 4.873
+Epoch=83 Loss=0.872058 CL=6.642909
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45725059509277344
+std = 0.8144939541816711
+min = 0.0
+max = 4.410221099853516
+Inference Time (ms): 4.941
+Epoch=84 Loss=0.855637 CL=6.645808
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4569648206233978
+std = 0.81565260887146
+min = 0.0
+max = 4.457111358642578
+Inference Time (ms): 4.924
+Epoch=85 Loss=0.864353 CL=6.649557
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45772629976272583
+std = 0.81777024269104
+min = 0.0
+max = 4.340349197387695
+Inference Time (ms): 5.158
+Epoch=86 Loss=0.842951 CL=6.644572
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4581488370895386
+std = 0.8170744180679321
+min = 0.0
+max = 4.424527168273926
+Inference Time (ms): 5.247
+Epoch=87 Loss=0.839242 CL=6.647202
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4580428898334503
+std = 0.8187922835350037
+min = 0.0
+max = 4.439208984375
+Inference Time (ms): 7.749
+Epoch=88 Loss=0.828895 CL=6.644477
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45847970247268677
+std = 0.8188127279281616
+min = 0.0
+max = 4.487057209014893
+Inference Time (ms): 7.139
+Epoch=89 Loss=0.823206 CL=6.645631
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4590347707271576
+std = 0.8197081089019775
+min = 0.0
+max = 4.421873092651367
+Inference Time (ms): 7.118
+Epoch=90 Loss=0.815145 CL=6.641065
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.459736168384552
+std = 0.8188056349754333
+min = 0.0
+max = 4.515377998352051
+Inference Time (ms): 7.22
+Epoch=91 Loss=0.808128 CL=6.640360
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.46008697152137756
+std = 0.8187273144721985
+min = 0.0
+max = 4.480615615844727
+Inference Time (ms): 7.241
+Epoch=92 Loss=0.806288 CL=6.644076
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.460295170545578
+std = 0.820897102355957
+min = 0.0
+max = 4.4664459228515625
+Inference Time (ms): 7.275
+Epoch=93 Loss=0.795751 CL=6.644226
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.46049490571022034
+std = 0.8217223882675171
+min = 0.0
+max = 4.4881062507629395
+Inference Time (ms): 6.678
+Epoch=94 Loss=0.791101 CL=6.644994
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.46030569076538086
+std = 0.8243192434310913
+min = 0.0
+max = 4.473628997802734
+Inference Time (ms): 6.901
+Epoch=95 Loss=0.780749 CL=6.639825
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.46060845255851746
+std = 0.8252296447753906
+min = 0.0
+max = 4.538861274719238
+Inference Time (ms): 6.858
+Epoch=96 Loss=0.778811 CL=6.641086
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4607800245285034
+std = 0.8263096809387207
+min = 0.0
+max = 4.5118818283081055
+Inference Time (ms): 7.025
+Epoch=97 Loss=0.774922 CL=6.639594
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4613330364227295
+std = 0.8263386487960815
+min = 0.0
+max = 4.466744422912598
+Inference Time (ms): 7.757
+Epoch=98 Loss=0.772579 CL=6.643188
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4623049795627594
+std = 0.8252314329147339
+min = 0.0
+max = 4.661651134490967
+Inference Time (ms): 5.612
+Epoch=99 Loss=0.771010 CL=6.639237
+Generator Parameters: 437955
+Total Parameters: 845165
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42078906297683716
+std = 0.5882734060287476
+min = 0.0
+max = 2.5531091690063477
+Inference Time (ms): 7.393
+
+===== LOGIT DEBUG =====
+out shape: torch.Size([2224, 20])
+first row: tensor([-2.8668, -2.8350, -3.1877, -2.8308, -3.0017, -3.2745, -2.7722, -3.0772,
+        -3.0680, -2.9172, -3.1104, -3.1911, -2.8549, -2.9402, -2.6804, -2.8674,
+        -3.0357, -3.4608, -3.0502, -3.2412])
+pred counts: tensor([   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           3,    0, 2221])
+
+===== EMBEDDING CHECK =====
+logits mean = -3.01114821434021
+logits std  = 0.17496196925640106
+logits min  = -3.47866153717041
+logits max  = -2.4881927967071533
+unique predicted classes = tensor([12, 14], device='cuda:0')
+num predicted classes = 2
+prob mean = 0.05000000074505806
+prob std  = 0.008917607367038727
+Epoch=0 Loss=3.843709 CL=8.039690
+
+===== DATA DEBUG BEFORE EVAL =====
+edge min: 2224
+edge max: 6671
+edge shape: torch.Size([2, 15568])
+x sum: -132598.078125
+
+===== OUT DEBUG =====
+result[6] shape: torch.Size([2224, 20])
+first logits:
+tensor([-2.8668, -2.8350, -3.1877, -2.8308, -3.0017, -3.2745, -2.7722, -3.0772,
+        -3.0680, -2.9172, -3.1104, -3.1911, -2.8549, -2.9402, -2.6804, -2.8674,
+        -3.0357, -3.4608, -3.0502, -3.2412])
+
+===== EVAL DEBUG =====
+edge min: 2224
+edge max: 6671
+train_acc = 0.044064748201438846
+valid_acc = 0.04054054054054054
+test_acc = 0.029213483146067417
+eval pred counts:
+tensor([   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           3,    0, 2221])
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4195916950702667
+std = 0.5792991518974304
+min = 0.0
+max = 2.6738176345825195
+Inference Time (ms): 7.364
+Epoch=1 Loss=3.766306 CL=7.814848
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41506388783454895
+std = 0.5779130458831787
+min = 0.0
+max = 2.701667547225952
+Inference Time (ms): 7.143
+Epoch=2 Loss=3.709594 CL=7.564072
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4092870056629181
+std = 0.5804623961448669
+min = 0.0
+max = 2.938640832901001
+Inference Time (ms): 7.553
+Epoch=3 Loss=3.662440 CL=7.417840
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40763363242149353
+std = 0.5865554213523865
+min = 0.0
+max = 3.339918851852417
+Inference Time (ms): 5.173
+Epoch=4 Loss=3.613039 CL=7.261078
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4086030423641205
+std = 0.5918238759040833
+min = 0.0
+max = 3.515505313873291
+Inference Time (ms): 4.985
+Epoch=5 Loss=3.568087 CL=7.138300
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40894466638565063
+std = 0.5946901440620422
+min = 0.0
+max = 3.5228145122528076
+Inference Time (ms): 5.084
+Epoch=6 Loss=3.527843 CL=7.060813
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40784817934036255
+std = 0.5998277068138123
+min = 0.0
+max = 3.686079978942871
+Inference Time (ms): 5.087
+Epoch=7 Loss=3.491576 CL=7.023766
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40793007612228394
+std = 0.6056768894195557
+min = 0.0
+max = 3.5534377098083496
+Inference Time (ms): 5.088
+Epoch=8 Loss=3.453640 CL=6.984838
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4084698259830475
+std = 0.6112663745880127
+min = 0.0
+max = 3.5913405418395996
+Inference Time (ms): 4.989
+Epoch=9 Loss=3.416640 CL=6.953837
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4090000092983246
+std = 0.617006242275238
+min = 0.0
+max = 3.7318646907806396
+Inference Time (ms): 4.982
+Epoch=10 Loss=3.381053 CL=6.936979
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4092412292957306
+std = 0.6253789663314819
+min = 0.0
+max = 3.633540391921997
+Inference Time (ms): 4.913
+Epoch=11 Loss=3.343573 CL=6.911170
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4094223976135254
+std = 0.6328664422035217
+min = 0.0
+max = 3.540849447250366
+Inference Time (ms): 4.998
+Epoch=12 Loss=3.305155 CL=6.886807
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4098929166793823
+std = 0.6381080746650696
+min = 0.0
+max = 3.6970062255859375
+Inference Time (ms): 4.901
+Epoch=13 Loss=3.264203 CL=6.864599
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41046246886253357
+std = 0.6423278450965881
+min = 0.0
+max = 3.92057728767395
+Inference Time (ms): 4.913
+Epoch=14 Loss=3.223729 CL=6.847420
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41153132915496826
+std = 0.6456511616706848
+min = 0.0
+max = 3.848954439163208
+Inference Time (ms): 5.224
+Epoch=15 Loss=3.183524 CL=6.831766
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41277551651000977
+std = 0.6492061018943787
+min = 0.0
+max = 3.836118459701538
+Inference Time (ms): 5.478
+Epoch=16 Loss=3.140911 CL=6.820573
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41394132375717163
+std = 0.6537251472473145
+min = 0.0
+max = 3.850780725479126
+Inference Time (ms): 5.238
+Epoch=17 Loss=3.097437 CL=6.808444
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4146595597267151
+std = 0.6576316356658936
+min = 0.0
+max = 3.7269396781921387
+Inference Time (ms): 5.202
+Epoch=18 Loss=3.054355 CL=6.798316
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4150393009185791
+std = 0.6607362627983093
+min = 0.0
+max = 3.633331060409546
+Inference Time (ms): 5.038
+Epoch=19 Loss=3.009469 CL=6.795011
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.415231317281723
+std = 0.6648973226547241
+min = 0.0
+max = 3.678393602371216
+Inference Time (ms): 5.101
+Epoch=20 Loss=2.963203 CL=6.782675
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41563549637794495
+std = 0.6679401397705078
+min = 0.0
+max = 3.644869804382324
+Inference Time (ms): 5.078
+Epoch=21 Loss=2.916505 CL=6.775325
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.416546106338501
+std = 0.6710984706878662
+min = 0.0
+max = 3.9281070232391357
+Inference Time (ms): 5.048
+Epoch=22 Loss=2.869456 CL=6.765747
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4169365465641022
+std = 0.6745306253433228
+min = 0.0
+max = 3.7592697143554688
+Inference Time (ms): 4.957
+Epoch=23 Loss=2.822062 CL=6.759987
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4176599383354187
+std = 0.678092896938324
+min = 0.0
+max = 3.8560290336608887
+Inference Time (ms): 4.907
+Epoch=24 Loss=2.774058 CL=6.748169
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4182574152946472
+std = 0.6809697151184082
+min = 0.0
+max = 3.934056282043457
+Inference Time (ms): 4.913
+Epoch=25 Loss=2.724901 CL=6.745708
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41861698031425476
+std = 0.684364914894104
+min = 0.0
+max = 3.9472784996032715
+Inference Time (ms): 4.893
+Epoch=26 Loss=2.676933 CL=6.737971
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41920962929725647
+std = 0.6871163845062256
+min = 0.0
+max = 4.09111213684082
+Inference Time (ms): 4.939
+Epoch=27 Loss=2.627884 CL=6.734714
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4196324050426483
+std = 0.6902356147766113
+min = 0.0
+max = 3.923295497894287
+Inference Time (ms): 5.214
+Epoch=28 Loss=2.577987 CL=6.727744
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41962099075317383
+std = 0.694324254989624
+min = 0.0
+max = 3.9805681705474854
+Inference Time (ms): 7.659
+Epoch=29 Loss=2.527008 CL=6.723922
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4196631908416748
+std = 0.6979662179946899
+min = 0.0
+max = 3.986579656600952
+Inference Time (ms): 5.57
+Epoch=30 Loss=2.478944 CL=6.723260
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41964682936668396
+std = 0.7013510465621948
+min = 0.0
+max = 3.985219717025757
+Inference Time (ms): 5.311
+Epoch=31 Loss=2.425655 CL=6.713237
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41994425654411316
+std = 0.7052122354507446
+min = 0.0
+max = 4.009099960327148
+Inference Time (ms): 5.325
+Epoch=32 Loss=2.374708 CL=6.708794
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42026785016059875
+std = 0.7097822427749634
+min = 0.0
+max = 4.013893127441406
+Inference Time (ms): 5.123
+Epoch=33 Loss=2.323952 CL=6.712542
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4208572208881378
+std = 0.7133810520172119
+min = 0.0
+max = 4.09463357925415
+Inference Time (ms): 5.076
+Epoch=34 Loss=2.272589 CL=6.709411
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.420622318983078
+std = 0.717601478099823
+min = 0.0
+max = 4.086940288543701
+Inference Time (ms): 5.44
+Epoch=35 Loss=2.221365 CL=6.710826
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4208384156227112
+std = 0.7218264937400818
+min = 0.0
+max = 4.1990885734558105
+Inference Time (ms): 5.104
+Epoch=36 Loss=2.171819 CL=6.709005
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4212740361690521
+std = 0.725520133972168
+min = 0.0
+max = 4.361142635345459
+Inference Time (ms): 5.103
+Epoch=37 Loss=2.121210 CL=6.709437
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42209720611572266
+std = 0.7294740676879883
+min = 0.0
+max = 4.273886203765869
+Inference Time (ms): 7.004
+Epoch=38 Loss=2.069354 CL=6.713289
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4231734275817871
+std = 0.731833279132843
+min = 0.0
+max = 4.323547840118408
+Inference Time (ms): 6.788
+Epoch=39 Loss=2.021728 CL=6.703518
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42348024249076843
+std = 0.7355551719665527
+min = 0.0
+max = 4.161942005157471
+Inference Time (ms): 6.989
+Epoch=40 Loss=1.972356 CL=6.707819
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4244139492511749
+std = 0.7385227084159851
+min = 0.0
+max = 4.195399284362793
+Inference Time (ms): 7.087
+Epoch=41 Loss=1.926685 CL=6.705356
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42496705055236816
+std = 0.7411206960678101
+min = 0.0
+max = 4.252042293548584
+Inference Time (ms): 7.181
+Epoch=42 Loss=1.879773 CL=6.703424
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42613229155540466
+std = 0.7450625896453857
+min = 0.0
+max = 4.271649360656738
+Inference Time (ms): 5.585
+Epoch=43 Loss=1.833262 CL=6.699524
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4272909462451935
+std = 0.7482843399047852
+min = 0.0
+max = 4.2750468254089355
+Inference Time (ms): 5.308
+Epoch=44 Loss=1.791390 CL=6.702771
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.427901953458786
+std = 0.7512211799621582
+min = 0.0
+max = 4.2493205070495605
+Inference Time (ms): 5.112
+Epoch=45 Loss=1.746187 CL=6.696484
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.428405225276947
+std = 0.7542625069618225
+min = 0.0
+max = 4.262871265411377
+Inference Time (ms): 6.843
+Epoch=46 Loss=1.708043 CL=6.695335
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42892155051231384
+std = 0.7574511170387268
+min = 0.0
+max = 4.335062503814697
+Inference Time (ms): 6.54
+Epoch=47 Loss=1.664185 CL=6.696896
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4299588203430176
+std = 0.7604389190673828
+min = 0.0
+max = 4.365630626678467
+Inference Time (ms): 6.116
+Epoch=48 Loss=1.622528 CL=6.694201
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43098723888397217
+std = 0.7636954188346863
+min = 0.0
+max = 4.344615936279297
+Inference Time (ms): 5.085
+Epoch=49 Loss=1.585899 CL=6.693727
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4315747618675232
+std = 0.7667902708053589
+min = 0.0
+max = 4.396562099456787
+Inference Time (ms): 5.09
+Epoch=50 Loss=1.547247 CL=6.692253
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4322401285171509
+std = 0.7684667110443115
+min = 0.0
+max = 4.419376373291016
+Inference Time (ms): 5.08
+Epoch=51 Loss=1.511922 CL=6.691651
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43365615606307983
+std = 0.7697012424468994
+min = 0.0
+max = 4.432376861572266
+Inference Time (ms): 5.002
+Epoch=52 Loss=1.479451 CL=6.687591
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4351549446582794
+std = 0.772698700428009
+min = 0.0
+max = 4.474143028259277
+Inference Time (ms): 5.005
+Epoch=53 Loss=1.450156 CL=6.692672
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4364473521709442
+std = 0.7743173241615295
+min = 0.0
+max = 4.598591327667236
+Inference Time (ms): 4.975
+Epoch=54 Loss=1.416203 CL=6.686789
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4366401433944702
+std = 0.7779765129089355
+min = 0.0
+max = 4.60601806640625
+Inference Time (ms): 4.971
+Epoch=55 Loss=1.385161 CL=6.683114
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4371918737888336
+std = 0.7797552943229675
+min = 0.0
+max = 4.6159210205078125
+Inference Time (ms): 4.981
+Epoch=56 Loss=1.357029 CL=6.687029
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4393930733203888
+std = 0.7816615700721741
+min = 0.0
+max = 4.598735809326172
+Inference Time (ms): 4.993
+Epoch=57 Loss=1.326484 CL=6.682785
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4400683343410492
+std = 0.7834265232086182
+min = 0.0
+max = 4.699476718902588
+Inference Time (ms): 4.901
+Epoch=58 Loss=1.299846 CL=6.687181
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4397512972354889
+std = 0.7866066694259644
+min = 0.0
+max = 4.76044225692749
+Inference Time (ms): 6.909
+Epoch=59 Loss=1.274927 CL=6.685282
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44019681215286255
+std = 0.7891395092010498
+min = 0.0
+max = 4.737035751342773
+Inference Time (ms): 5.234
+Epoch=60 Loss=1.257515 CL=6.683371
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4419555068016052
+std = 0.7899454832077026
+min = 0.0
+max = 4.674560546875
+Inference Time (ms): 5.297
+Epoch=61 Loss=1.231817 CL=6.679659
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4429175853729248
+std = 0.794070303440094
+min = 0.0
+max = 4.721799850463867
+Inference Time (ms): 6.92
+Epoch=62 Loss=1.208314 CL=6.675076
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44348374009132385
+std = 0.7959085702896118
+min = 0.0
+max = 4.754578590393066
+Inference Time (ms): 5.08
+Epoch=63 Loss=1.182583 CL=6.672323
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44420871138572693
+std = 0.7969638705253601
+min = 0.0
+max = 4.800930023193359
+Inference Time (ms): 5.092
+Epoch=64 Loss=1.163327 CL=6.676062
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4452364444732666
+std = 0.7983928918838501
+min = 0.0
+max = 4.771194934844971
+Inference Time (ms): 5.11
+Epoch=65 Loss=1.141025 CL=6.680474
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44603997468948364
+std = 0.7994685769081116
+min = 0.0
+max = 4.819171905517578
+Inference Time (ms): 5.113
+Epoch=66 Loss=1.120543 CL=6.675462
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4462909996509552
+std = 0.8009976744651794
+min = 0.0
+max = 4.777493000030518
+Inference Time (ms): 4.984
+Epoch=67 Loss=1.103635 CL=6.676363
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44721683859825134
+std = 0.8022114038467407
+min = 0.0
+max = 4.822657108306885
+Inference Time (ms): 4.916
+Epoch=68 Loss=1.081844 CL=6.669614
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.448828786611557
+std = 0.803421139717102
+min = 0.0
+max = 4.8242268562316895
+Inference Time (ms): 4.967
+Epoch=69 Loss=1.068369 CL=6.670203
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4488970637321472
+std = 0.804943323135376
+min = 0.0
+max = 4.863302230834961
+Inference Time (ms): 4.91
+Epoch=70 Loss=1.051311 CL=6.671587
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4497685134410858
+std = 0.8057825565338135
+min = 0.0
+max = 4.767913341522217
+Inference Time (ms): 4.975
+Epoch=71 Loss=1.035288 CL=6.673954
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45048725605010986
+std = 0.8067018985748291
+min = 0.0
+max = 4.711809158325195
+Inference Time (ms): 5.17
+Epoch=72 Loss=1.015757 CL=6.670698
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4514752924442291
+std = 0.8079330325126648
+min = 0.0
+max = 4.858421802520752
+Inference Time (ms): 7.248
+Epoch=73 Loss=1.001688 CL=6.663434
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4524092972278595
+std = 0.8080001473426819
+min = 0.0
+max = 4.918315410614014
+Inference Time (ms): 8.175
+Epoch=74 Loss=0.992266 CL=6.667133
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4524972438812256
+std = 0.8094654083251953
+min = 0.0
+max = 4.949468612670898
+Inference Time (ms): 6.755
+Epoch=75 Loss=0.974921 CL=6.668067
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.453174352645874
+std = 0.811356782913208
+min = 0.0
+max = 4.8553466796875
+Inference Time (ms): 8.662
+Epoch=76 Loss=0.960108 CL=6.669125
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4535798728466034
+std = 0.8125880360603333
+min = 0.0
+max = 4.782227993011475
+Inference Time (ms): 5.501
+Epoch=77 Loss=0.947199 CL=6.667624
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45372748374938965
+std = 0.8134747743606567
+min = 0.0
+max = 4.881228446960449
+Inference Time (ms): 7.292
+Epoch=78 Loss=0.933703 CL=6.663538
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45338574051856995
+std = 0.8139737844467163
+min = 0.0
+max = 4.96035099029541
+Inference Time (ms): 6.687
+Epoch=79 Loss=0.930759 CL=6.669958
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45400071144104004
+std = 0.814626932144165
+min = 0.0
+max = 4.921146869659424
+Inference Time (ms): 7.159
+Epoch=80 Loss=0.912568 CL=6.669402
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4542903006076813
+std = 0.8158739805221558
+min = 0.0
+max = 4.819394588470459
+Inference Time (ms): 5.377
+Epoch=81 Loss=0.900979 CL=6.666298
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45412468910217285
+std = 0.8168138861656189
+min = 0.0
+max = 4.783666133880615
+Inference Time (ms): 7.639
+Epoch=82 Loss=0.892757 CL=6.671991
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45416584610939026
+std = 0.8188974857330322
+min = 0.0
+max = 4.848108768463135
+Inference Time (ms): 7.075
+Epoch=83 Loss=0.879155 CL=6.668756
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45464202761650085
+std = 0.8204538226127625
+min = 0.0
+max = 4.944610595703125
+Inference Time (ms): 6.174
+Epoch=84 Loss=0.870893 CL=6.663496
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4551013112068176
+std = 0.8203805088996887
+min = 0.0
+max = 4.904534339904785
+Inference Time (ms): 8.056
+Epoch=85 Loss=0.864800 CL=6.660447
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45558398962020874
+std = 0.8215163946151733
+min = 0.0
+max = 4.905514717102051
+Inference Time (ms): 5.488
+Epoch=86 Loss=0.857033 CL=6.661557
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45540544390678406
+std = 0.8222585320472717
+min = 0.0
+max = 4.840881824493408
+Inference Time (ms): 5.029
+Epoch=87 Loss=0.846221 CL=6.659856
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4552563726902008
+std = 0.8238418102264404
+min = 0.0
+max = 4.811936378479004
+Inference Time (ms): 5.208
+Epoch=88 Loss=0.838229 CL=6.663664
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45558953285217285
+std = 0.8241620063781738
+min = 0.0
+max = 4.847065448760986
+Inference Time (ms): 5.104
+Epoch=89 Loss=0.829874 CL=6.661823
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4561026096343994
+std = 0.8242508769035339
+min = 0.0
+max = 4.812857627868652
+Inference Time (ms): 5.047
+Epoch=90 Loss=0.827998 CL=6.657320
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45666322112083435
+std = 0.8250706791877747
+min = 0.0
+max = 4.88613748550415
+Inference Time (ms): 5.002
+Epoch=91 Loss=0.818415 CL=6.654122
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45703861117362976
+std = 0.8256132006645203
+min = 0.0
+max = 4.912016868591309
+Inference Time (ms): 4.973
+Epoch=92 Loss=0.807405 CL=6.653218
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.457793265581131
+std = 0.8251200914382935
+min = 0.0
+max = 4.901345729827881
+Inference Time (ms): 4.932
+Epoch=93 Loss=0.806321 CL=6.658045
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4583923816680908
+std = 0.825192928314209
+min = 0.0
+max = 5.1772379875183105
+Inference Time (ms): 4.929
+Epoch=94 Loss=0.795219 CL=6.654624
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4591423273086548
+std = 0.8244951963424683
+min = 0.0
+max = 4.955938339233398
+Inference Time (ms): 4.887
+Epoch=95 Loss=0.791462 CL=6.655581
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45936688780784607
+std = 0.8262757062911987
+min = 0.0
+max = 4.92455530166626
+Inference Time (ms): 4.887
+Epoch=96 Loss=0.788100 CL=6.653956
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45868349075317383
+std = 0.825874388217926
+min = 0.0
+max = 4.9904561042785645
+Inference Time (ms): 4.958
+Epoch=97 Loss=0.782785 CL=6.654160
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45931047201156616
+std = 0.8265758752822876
+min = 0.0
+max = 4.976768970489502
+Inference Time (ms): 5.576
+Epoch=98 Loss=0.776263 CL=6.657006
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4601755738258362
+std = 0.828827977180481
+min = 0.0
+max = 4.834207534790039
+Inference Time (ms): 5.448
+Epoch=99 Loss=0.770410 CL=6.650692
+Generator Parameters: 437955
+Total Parameters: 845165
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42771708965301514
+std = 0.566323459148407
+min = 0.0
+max = 3.3577377796173096
+Inference Time (ms): 5.768
+
+===== LOGIT DEBUG =====
+out shape: torch.Size([2224, 20])
+first row: tensor([-2.8110, -2.9425, -2.8709, -3.0112, -2.8198, -3.0354, -3.0424, -2.8816,
+        -3.0641, -3.2356, -3.2154, -3.1374, -3.3867, -2.6069, -2.9072, -3.2167,
+        -3.1499, -2.8061, -2.9961, -3.1087])
+pred counts: tensor([415,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 738,
+        103,   0,   0, 968])
+
+===== EMBEDDING CHECK =====
+logits mean = -3.010957956314087
+logits std  = 0.1750030368566513
+logits min  = -3.563506603240967
+logits max  = -2.5995845794677734
+unique predicted classes = tensor([ 0, 13, 14, 17], device='cuda:0')
+num predicted classes = 4
+prob mean = 0.05000000074505806
+prob std  = 0.008710067719221115
+Epoch=0 Loss=3.832363 CL=7.974942
+
+===== DATA DEBUG BEFORE EVAL =====
+edge min: 2224
+edge max: 6671
+edge shape: torch.Size([2, 15568])
+x sum: -132598.078125
+
+===== OUT DEBUG =====
+result[6] shape: torch.Size([2224, 20])
+first logits:
+tensor([-2.8110, -2.9425, -2.8709, -3.0112, -2.8198, -3.0354, -3.0424, -2.8816,
+        -3.0641, -3.2356, -3.2154, -3.1374, -3.3867, -2.6069, -2.9072, -3.2167,
+        -3.1499, -2.8061, -2.9961, -3.1087])
+
+===== EVAL DEBUG =====
+edge min: 2224
+edge max: 6671
+train_acc = 0.030575539568345324
+valid_acc = 0.02252252252252252
+test_acc = 0.030337078651685393
+eval pred counts:
+tensor([415,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 738,
+        103,   0,   0, 968])
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4241068959236145
+std = 0.5697978138923645
+min = 0.0
+max = 3.451768398284912
+Inference Time (ms): 4.974
+Epoch=1 Loss=3.747928 CL=7.612017
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4197850823402405
+std = 0.5754266381263733
+min = 0.0
+max = 3.4064419269561768
+Inference Time (ms): 5.141
+Epoch=2 Loss=3.697042 CL=7.456336
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41816747188568115
+std = 0.5813156962394714
+min = 0.0
+max = 3.6830852031707764
+Inference Time (ms): 5.05
+Epoch=3 Loss=3.650353 CL=7.288991
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4161756634712219
+std = 0.5891224145889282
+min = 0.0
+max = 3.7904348373413086
+Inference Time (ms): 5.054
+Epoch=4 Loss=3.609999 CL=7.189929
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4138459265232086
+std = 0.5954697132110596
+min = 0.0
+max = 3.934389352798462
+Inference Time (ms): 4.963
+Epoch=5 Loss=3.568354 CL=7.107484
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41182181239128113
+std = 0.6017268896102905
+min = 0.0
+max = 3.9533190727233887
+Inference Time (ms): 4.903
+Epoch=6 Loss=3.531543 CL=7.070171
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41003528237342834
+std = 0.6075799465179443
+min = 0.0
+max = 3.9743106365203857
+Inference Time (ms): 4.872
+Epoch=7 Loss=3.496202 CL=7.044196
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4084323048591614
+std = 0.6137421131134033
+min = 0.0
+max = 4.009467124938965
+Inference Time (ms): 4.96
+Epoch=8 Loss=3.461215 CL=7.013283
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4076041281223297
+std = 0.6188272833824158
+min = 0.0
+max = 4.001527786254883
+Inference Time (ms): 4.92
+Epoch=9 Loss=3.425020 CL=6.973960
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40757203102111816
+std = 0.6231426000595093
+min = 0.0
+max = 4.023184299468994
+Inference Time (ms): 4.883
+Epoch=10 Loss=3.389967 CL=6.945505
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40771639347076416
+std = 0.6276099681854248
+min = 0.0
+max = 3.9600749015808105
+Inference Time (ms): 5.189
+Epoch=11 Loss=3.354809 CL=6.922864
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4071415066719055
+std = 0.6325997114181519
+min = 0.0
+max = 4.017383575439453
+Inference Time (ms): 5.19
+Epoch=12 Loss=3.317319 CL=6.904590
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4067024290561676
+std = 0.6373525857925415
+min = 0.0
+max = 3.9703547954559326
+Inference Time (ms): 7.255
+Epoch=13 Loss=3.278072 CL=6.890368
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40635398030281067
+std = 0.6423987746238708
+min = 0.0
+max = 4.074398517608643
+Inference Time (ms): 5.187
+Epoch=14 Loss=3.238748 CL=6.883003
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4068138599395752
+std = 0.646782398223877
+min = 0.0
+max = 4.167369365692139
+Inference Time (ms): 5.392
+Epoch=15 Loss=3.198550 CL=6.867591
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4068201780319214
+std = 0.650833249092102
+min = 0.0
+max = 4.150527000427246
+Inference Time (ms): 7.223
+Epoch=16 Loss=3.155424 CL=6.853375
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40700843930244446
+std = 0.6541795134544373
+min = 0.0
+max = 4.194799423217773
+Inference Time (ms): 6.907
+Epoch=17 Loss=3.112085 CL=6.838237
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40718966722488403
+std = 0.6566329598426819
+min = 0.0
+max = 4.10798978805542
+Inference Time (ms): 6.976
+Epoch=18 Loss=3.065936 CL=6.825798
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4075124263763428
+std = 0.6595639586448669
+min = 0.0
+max = 4.116103649139404
+Inference Time (ms): 5.928
+Epoch=19 Loss=3.020403 CL=6.817116
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40751177072525024
+std = 0.6640410423278809
+min = 0.0
+max = 4.090123176574707
+Inference Time (ms): 5.29
+Epoch=20 Loss=2.971956 CL=6.806345
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40748709440231323
+std = 0.6689841151237488
+min = 0.0
+max = 4.087762355804443
+Inference Time (ms): 5.307
+Epoch=21 Loss=2.924027 CL=6.797762
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40750622749328613
+std = 0.6742337346076965
+min = 0.0
+max = 4.274636268615723
+Inference Time (ms): 7.766
+Epoch=22 Loss=2.873576 CL=6.777120
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40753114223480225
+std = 0.6792503595352173
+min = 0.0
+max = 4.221057891845703
+Inference Time (ms): 6.904
+Epoch=23 Loss=2.823222 CL=6.771815
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4077441096305847
+std = 0.6839479207992554
+min = 0.0
+max = 4.256289958953857
+Inference Time (ms): 6.76
+Epoch=24 Loss=2.772281 CL=6.758066
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4078114330768585
+std = 0.6890904307365417
+min = 0.0
+max = 4.552340030670166
+Inference Time (ms): 6.717
+Epoch=25 Loss=2.721499 CL=6.750920
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40785670280456543
+std = 0.6935678124427795
+min = 0.0
+max = 4.478110313415527
+Inference Time (ms): 5.128
+Epoch=26 Loss=2.672148 CL=6.742592
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40773165225982666
+std = 0.6984229683876038
+min = 0.0
+max = 4.592189788818359
+Inference Time (ms): 5.022
+Epoch=27 Loss=2.621961 CL=6.737082
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4077373147010803
+std = 0.7031392455101013
+min = 0.0
+max = 4.8457794189453125
+Inference Time (ms): 5.038
+Epoch=28 Loss=2.570935 CL=6.732159
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40785521268844604
+std = 0.7078442573547363
+min = 0.0
+max = 4.487678050994873
+Inference Time (ms): 5.032
+Epoch=29 Loss=2.521243 CL=6.729846
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40773844718933105
+std = 0.7120101451873779
+min = 0.0
+max = 4.4148101806640625
+Inference Time (ms): 5.139
+Epoch=30 Loss=2.468283 CL=6.724060
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4079418182373047
+std = 0.7159262895584106
+min = 0.0
+max = 4.720832824707031
+Inference Time (ms): 4.946
+Epoch=31 Loss=2.420159 CL=6.725578
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40858960151672363
+std = 0.72025465965271
+min = 0.0
+max = 4.666662216186523
+Inference Time (ms): 4.967
+Epoch=32 Loss=2.369849 CL=6.723682
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4094296097755432
+std = 0.7241661548614502
+min = 0.0
+max = 4.51057243347168
+Inference Time (ms): 4.962
+Epoch=33 Loss=2.321558 CL=6.714022
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4097103476524353
+std = 0.72744220495224
+min = 0.0
+max = 4.386165618896484
+Inference Time (ms): 4.888
+Epoch=34 Loss=2.274251 CL=6.712380
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4106338918209076
+std = 0.731444239616394
+min = 0.0
+max = 4.474725246429443
+Inference Time (ms): 4.885
+Epoch=35 Loss=2.225270 CL=6.709235
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41180187463760376
+std = 0.7350960373878479
+min = 0.0
+max = 4.446816921234131
+Inference Time (ms): 5.036
+Epoch=36 Loss=2.176635 CL=6.706976
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41282567381858826
+std = 0.7383881211280823
+min = 0.0
+max = 4.495660305023193
+Inference Time (ms): 5.407
+Epoch=37 Loss=2.129102 CL=6.701989
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4137634336948395
+std = 0.741912841796875
+min = 0.0
+max = 4.463064193725586
+Inference Time (ms): 6.693
+Epoch=38 Loss=2.081075 CL=6.696579
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41475042700767517
+std = 0.7441142201423645
+min = 0.0
+max = 4.7042155265808105
+Inference Time (ms): 5.241
+Epoch=39 Loss=2.037966 CL=6.696481
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4157833456993103
+std = 0.7476593255996704
+min = 0.0
+max = 4.581826210021973
+Inference Time (ms): 4.978
+Epoch=40 Loss=1.993163 CL=6.694368
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4167945981025696
+std = 0.7515996098518372
+min = 0.0
+max = 4.626356601715088
+Inference Time (ms): 5.028
+Epoch=41 Loss=1.947819 CL=6.692885
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4175918400287628
+std = 0.7550661563873291
+min = 0.0
+max = 4.594780445098877
+Inference Time (ms): 5.045
+Epoch=42 Loss=1.904425 CL=6.693882
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41836708784103394
+std = 0.7584942579269409
+min = 0.0
+max = 4.5260491371154785
+Inference Time (ms): 5.027
+Epoch=43 Loss=1.862632 CL=6.689764
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4190787672996521
+std = 0.7624318599700928
+min = 0.0
+max = 4.652967929840088
+Inference Time (ms): 4.954
+Epoch=44 Loss=1.818148 CL=6.685680
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4199516773223877
+std = 0.7657071948051453
+min = 0.0
+max = 4.697831153869629
+Inference Time (ms): 4.94
+Epoch=45 Loss=1.777070 CL=6.695818
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4210757911205292
+std = 0.7680743336677551
+min = 0.0
+max = 4.773441791534424
+Inference Time (ms): 4.892
+Epoch=46 Loss=1.738084 CL=6.685272
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4217154383659363
+std = 0.7714612483978271
+min = 0.0
+max = 4.724182605743408
+Inference Time (ms): 4.97
+Epoch=47 Loss=1.698234 CL=6.689591
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42279234528541565
+std = 0.7745677828788757
+min = 0.0
+max = 4.641773700714111
+Inference Time (ms): 4.868
+Epoch=48 Loss=1.660389 CL=6.685071
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42360246181488037
+std = 0.7770763635635376
+min = 0.0
+max = 4.679953575134277
+Inference Time (ms): 4.91
+Epoch=49 Loss=1.625423 CL=6.690187
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4249037802219391
+std = 0.7792665362358093
+min = 0.0
+max = 4.672072887420654
+Inference Time (ms): 5.269
+Epoch=50 Loss=1.584463 CL=6.686118
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42575594782829285
+std = 0.7821261882781982
+min = 0.0
+max = 4.7208733558654785
+Inference Time (ms): 5.311
+Epoch=51 Loss=1.549186 CL=6.687046
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4265477657318115
+std = 0.7846071124076843
+min = 0.0
+max = 4.7264275550842285
+Inference Time (ms): 5.238
+Epoch=52 Loss=1.515303 CL=6.685748
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42725783586502075
+std = 0.7870818972587585
+min = 0.0
+max = 4.7130584716796875
+Inference Time (ms): 5.122
+Epoch=53 Loss=1.485369 CL=6.688056
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4285967946052551
+std = 0.7891870737075806
+min = 0.0
+max = 4.653878688812256
+Inference Time (ms): 5.28
+Epoch=54 Loss=1.454068 CL=6.684911
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42991089820861816
+std = 0.7911770939826965
+min = 0.0
+max = 4.6315531730651855
+Inference Time (ms): 6.639
+Epoch=55 Loss=1.418307 CL=6.684018
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43099457025527954
+std = 0.7932416200637817
+min = 0.0
+max = 4.681421279907227
+Inference Time (ms): 7.351
+Epoch=56 Loss=1.390876 CL=6.681086
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4323541522026062
+std = 0.794449508190155
+min = 0.0
+max = 4.70439338684082
+Inference Time (ms): 5.357
+Epoch=57 Loss=1.365292 CL=6.689359
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43320587277412415
+std = 0.796838641166687
+min = 0.0
+max = 4.7008161544799805
+Inference Time (ms): 5.073
+Epoch=58 Loss=1.333666 CL=6.682594
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43391451239585876
+std = 0.7995815277099609
+min = 0.0
+max = 4.697200775146484
+Inference Time (ms): 7.313
+Epoch=59 Loss=1.309152 CL=6.683809
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43464475870132446
+std = 0.80197674036026
+min = 0.0
+max = 4.78107213973999
+Inference Time (ms): 6.396
+Epoch=60 Loss=1.282557 CL=6.686998
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43530577421188354
+std = 0.8033989667892456
+min = 0.0
+max = 4.736105918884277
+Inference Time (ms): 8.239
+Epoch=61 Loss=1.257451 CL=6.687328
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43631935119628906
+std = 0.804984450340271
+min = 0.0
+max = 4.671436786651611
+Inference Time (ms): 7.211
+Epoch=62 Loss=1.240288 CL=6.682278
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43624040484428406
+std = 0.8080160021781921
+min = 0.0
+max = 4.742885112762451
+Inference Time (ms): 7.092
+Epoch=63 Loss=1.214662 CL=6.683789
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4371489882469177
+std = 0.8081527948379517
+min = 0.0
+max = 4.810825347900391
+Inference Time (ms): 5.752
+Epoch=64 Loss=1.198015 CL=6.684863
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4389372766017914
+std = 0.8100772500038147
+min = 0.0
+max = 4.7894816398620605
+Inference Time (ms): 7.62
+Epoch=65 Loss=1.173763 CL=6.686698
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43995270133018494
+std = 0.8113489151000977
+min = 0.0
+max = 4.827108860015869
+Inference Time (ms): 7.578
+Epoch=66 Loss=1.158158 CL=6.681583
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44039952754974365
+std = 0.8121097683906555
+min = 0.0
+max = 4.811008930206299
+Inference Time (ms): 6.333
+Epoch=67 Loss=1.141318 CL=6.684191
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4410802125930786
+std = 0.8139058947563171
+min = 0.0
+max = 4.843796253204346
+Inference Time (ms): 4.985
+Epoch=68 Loss=1.120724 CL=6.689006
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4420005977153778
+std = 0.815172016620636
+min = 0.0
+max = 4.956100940704346
+Inference Time (ms): 4.972
+Epoch=69 Loss=1.102046 CL=6.681921
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44262969493865967
+std = 0.8163955807685852
+min = 0.0
+max = 4.900736331939697
+Inference Time (ms): 4.938
+Epoch=70 Loss=1.086518 CL=6.678326
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4433596134185791
+std = 0.8167523145675659
+min = 0.0
+max = 4.87905216217041
+Inference Time (ms): 5.087
+Epoch=71 Loss=1.070355 CL=6.679309
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44400063157081604
+std = 0.8164606094360352
+min = 0.0
+max = 4.850990295410156
+Inference Time (ms): 4.951
+Epoch=72 Loss=1.058074 CL=6.685697
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4444497525691986
+std = 0.8182111978530884
+min = 0.0
+max = 4.860489845275879
+Inference Time (ms): 4.892
+Epoch=73 Loss=1.040736 CL=6.679743
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4450305998325348
+std = 0.819748044013977
+min = 0.0
+max = 4.9246931076049805
+Inference Time (ms): 5.038
+Epoch=74 Loss=1.028903 CL=6.679472
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4458672106266022
+std = 0.8196120262145996
+min = 0.0
+max = 4.968463897705078
+Inference Time (ms): 4.993
+Epoch=75 Loss=1.015679 CL=6.673358
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4461459815502167
+std = 0.8194208145141602
+min = 0.0
+max = 4.877541542053223
+Inference Time (ms): 4.906
+Epoch=76 Loss=1.003020 CL=6.678157
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4463653862476349
+std = 0.8195302486419678
+min = 0.0
+max = 4.9181365966796875
+Inference Time (ms): 4.989
+Epoch=77 Loss=0.995182 CL=6.670071
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44711920619010925
+std = 0.8212468028068542
+min = 0.0
+max = 4.977802276611328
+Inference Time (ms): 5.785
+Epoch=78 Loss=0.981027 CL=6.669588
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.447583943605423
+std = 0.8226783871650696
+min = 0.0
+max = 5.011468887329102
+Inference Time (ms): 5.382
+Epoch=79 Loss=0.971007 CL=6.664836
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44848817586898804
+std = 0.8211444616317749
+min = 0.0
+max = 4.9488019943237305
+Inference Time (ms): 5.243
+Epoch=80 Loss=0.960623 CL=6.673097
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4484950006008148
+std = 0.8224639892578125
+min = 0.0
+max = 5.008615970611572
+Inference Time (ms): 4.922
+Epoch=81 Loss=0.946122 CL=6.669153
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4500543773174286
+std = 0.8227798938751221
+min = 0.0
+max = 5.060673713684082
+Inference Time (ms): 4.961
+Epoch=82 Loss=0.940566 CL=6.663118
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45083481073379517
+std = 0.8235725164413452
+min = 0.0
+max = 5.027900695800781
+Inference Time (ms): 4.973
+Epoch=83 Loss=0.925407 CL=6.666848
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4509066641330719
+std = 0.82258141040802
+min = 0.0
+max = 5.110408782958984
+Inference Time (ms): 4.964
+Epoch=84 Loss=0.924319 CL=6.672876
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4514361619949341
+std = 0.8261978626251221
+min = 0.0
+max = 5.079969882965088
+Inference Time (ms): 4.876
+Epoch=85 Loss=0.907650 CL=6.660086
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4527420103549957
+std = 0.8259797096252441
+min = 0.0
+max = 5.131693363189697
+Inference Time (ms): 4.858
+Epoch=86 Loss=0.897526 CL=6.658292
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4527518153190613
+std = 0.8252612352371216
+min = 0.0
+max = 5.166092395782471
+Inference Time (ms): 4.819
+Epoch=87 Loss=0.889583 CL=6.660030
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4528838098049164
+std = 0.8241086602210999
+min = 0.0
+max = 5.150513648986816
+Inference Time (ms): 4.824
+Epoch=88 Loss=0.881386 CL=6.663063
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4529806077480316
+std = 0.8263372182846069
+min = 0.0
+max = 5.320412635803223
+Inference Time (ms): 4.816
+Epoch=89 Loss=0.868792 CL=6.655547
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4533800780773163
+std = 0.8280348181724548
+min = 0.0
+max = 5.228982448577881
+Inference Time (ms): 4.812
+Epoch=90 Loss=0.861032 CL=6.657118
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.453296422958374
+std = 0.8285871148109436
+min = 0.0
+max = 5.142985820770264
+Inference Time (ms): 5.167
+Epoch=91 Loss=0.855216 CL=6.658718
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4535430669784546
+std = 0.8288531303405762
+min = 0.0
+max = 5.109365463256836
+Inference Time (ms): 7.031
+Epoch=92 Loss=0.842660 CL=6.662394
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45375367999076843
+std = 0.8302981853485107
+min = 0.0
+max = 5.120751857757568
+Inference Time (ms): 6.512
+Epoch=93 Loss=0.838112 CL=6.660496
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45415064692497253
+std = 0.8323284387588501
+min = 0.0
+max = 5.131558895111084
+Inference Time (ms): 5.257
+Epoch=94 Loss=0.831010 CL=6.654225
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45427247881889343
+std = 0.8326795697212219
+min = 0.0
+max = 5.208770275115967
+Inference Time (ms): 5.191
+Epoch=95 Loss=0.826698 CL=6.657771
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4544523060321808
+std = 0.8340548276901245
+min = 0.0
+max = 5.185420513153076
+Inference Time (ms): 5.223
+Epoch=96 Loss=0.812205 CL=6.656317
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45493555068969727
+std = 0.8356274366378784
+min = 0.0
+max = 5.1947760581970215
+Inference Time (ms): 5.056
+Epoch=97 Loss=0.811008 CL=6.647071
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45436596870422363
+std = 0.8374856114387512
+min = 0.0
+max = 5.105898857116699
+Inference Time (ms): 6.915
+Epoch=98 Loss=0.801500 CL=6.652016
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45389482378959656
+std = 0.8379096388816833
+min = 0.0
+max = 5.149256229400635
+Inference Time (ms): 7.586
+Epoch=99 Loss=0.794384 CL=6.649042
+Generator Parameters: 437955
+Total Parameters: 845165
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4146088659763336
+std = 0.5144420266151428
+min = 0.0
+max = 2.5391488075256348
+Inference Time (ms): 7.114
+
+===== LOGIT DEBUG =====
+out shape: torch.Size([2224, 20])
+first row: tensor([-2.7777, -2.9131, -2.8656, -2.8863, -2.8004, -2.9708, -3.1887, -3.0271,
+        -3.1085, -3.1079, -2.9434, -3.2371, -3.1510, -3.2802, -2.6960, -2.7359,
+        -2.9516, -3.2638, -3.2171, -3.1141])
+pred counts: tensor([   1,    0,   37,    0,   14,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,  745, 1427])
+
+===== EMBEDDING CHECK =====
+logits mean = -3.0125772953033447
+logits std  = 0.18310722708702087
+logits min  = -3.408853530883789
+logits max  = -2.5210886001586914
+unique predicted classes = tensor([ 0,  2,  4, 14, 15], device='cuda:0')
+num predicted classes = 5
+prob mean = 0.05000000074505806
+prob std  = 0.009242817759513855
+Epoch=0 Loss=3.836894 CL=8.143763
+
+===== DATA DEBUG BEFORE EVAL =====
+edge min: 2224
+edge max: 6671
+edge shape: torch.Size([2, 15568])
+x sum: -132598.078125
+
+===== OUT DEBUG =====
+result[6] shape: torch.Size([2224, 20])
+first logits:
+tensor([-2.7777, -2.9131, -2.8656, -2.8863, -2.8004, -2.9708, -3.1887, -3.0271,
+        -3.1085, -3.1079, -2.9434, -3.2371, -3.1510, -3.2802, -2.6960, -2.7359,
+        -2.9516, -3.2638, -3.2171, -3.1141])
+
+===== EVAL DEBUG =====
+edge min: 2224
+edge max: 6671
+train_acc = 0.02068345323741007
+valid_acc = 0.02252252252252252
+test_acc = 0.024719101123595506
+eval pred counts:
+tensor([   1,    0,   37,    0,   14,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,  745, 1427])
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4050513207912445
+std = 0.5422490239143372
+min = 0.0
+max = 2.817305326461792
+Inference Time (ms): 8.241
+Epoch=1 Loss=3.770364 CL=7.990049
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4019891321659088
+std = 0.5403479933738708
+min = 0.0
+max = 3.013977289199829
+Inference Time (ms): 10.09
+Epoch=2 Loss=3.718203 CL=7.810328
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40272143483161926
+std = 0.5411853194236755
+min = 0.0
+max = 3.003725290298462
+Inference Time (ms): 5.24
+Epoch=3 Loss=3.664743 CL=7.585520
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4047792851924896
+std = 0.5477813482284546
+min = 0.0
+max = 3.201211452484131
+Inference Time (ms): 4.992
+Epoch=4 Loss=3.616309 CL=7.389044
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40616756677627563
+std = 0.5582678318023682
+min = 0.0
+max = 3.5004537105560303
+Inference Time (ms): 7.153
+Epoch=5 Loss=3.575208 CL=7.263960
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40688207745552063
+std = 0.567721426486969
+min = 0.0
+max = 3.4947917461395264
+Inference Time (ms): 8.44
+Epoch=6 Loss=3.534703 CL=7.182544
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4066959321498871
+std = 0.5770542025566101
+min = 0.0
+max = 3.66707181930542
+Inference Time (ms): 8.369
+Epoch=7 Loss=3.495260 CL=7.113984
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4059530198574066
+std = 0.5855405330657959
+min = 0.0
+max = 3.7547507286071777
+Inference Time (ms): 6.584
+Epoch=8 Loss=3.455401 CL=7.050344
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4062737226486206
+std = 0.5925518870353699
+min = 0.0
+max = 3.4992125034332275
+Inference Time (ms): 6.199
+Epoch=9 Loss=3.417886 CL=6.990335
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40670207142829895
+std = 0.5987393260002136
+min = 0.0
+max = 3.5182442665100098
+Inference Time (ms): 4.951
+Epoch=10 Loss=3.380018 CL=6.952958
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4079521894454956
+std = 0.6048099994659424
+min = 0.0
+max = 3.5016660690307617
+Inference Time (ms): 4.975
+Epoch=11 Loss=3.341582 CL=6.919845
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40881457924842834
+std = 0.6111412048339844
+min = 0.0
+max = 3.6338236331939697
+Inference Time (ms): 4.945
+Epoch=12 Loss=3.301400 CL=6.888906
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4093734920024872
+std = 0.616489589214325
+min = 0.0
+max = 3.717909097671509
+Inference Time (ms): 4.925
+Epoch=13 Loss=3.262651 CL=6.869727
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40966859459877014
+std = 0.6219630241394043
+min = 0.0
+max = 3.681353807449341
+Inference Time (ms): 4.886
+Epoch=14 Loss=3.223351 CL=6.859914
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4098099172115326
+std = 0.6272669434547424
+min = 0.0
+max = 3.7269937992095947
+Inference Time (ms): 4.81
+Epoch=15 Loss=3.183348 CL=6.847762
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41013190150260925
+std = 0.6326823234558105
+min = 0.0
+max = 3.686905860900879
+Inference Time (ms): 4.831
+Epoch=16 Loss=3.144229 CL=6.837507
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.410774827003479
+std = 0.6382138133049011
+min = 0.0
+max = 3.7757375240325928
+Inference Time (ms): 4.889
+Epoch=17 Loss=3.102703 CL=6.820494
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41204145550727844
+std = 0.6439304351806641
+min = 0.0
+max = 3.769742965698242
+Inference Time (ms): 4.898
+Epoch=18 Loss=3.060956 CL=6.808118
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4131726026535034
+std = 0.6491400003433228
+min = 0.0
+max = 3.924743413925171
+Inference Time (ms): 4.807
+Epoch=19 Loss=3.016229 CL=6.796196
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4138560891151428
+std = 0.6547770500183105
+min = 0.0
+max = 4.000957012176514
+Inference Time (ms): 5.463
+Epoch=20 Loss=2.973912 CL=6.790854
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4146983325481415
+std = 0.6599254012107849
+min = 0.0
+max = 4.091838359832764
+Inference Time (ms): 5.268
+Epoch=21 Loss=2.929191 CL=6.779192
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4154070019721985
+std = 0.6650346517562866
+min = 0.0
+max = 4.187768459320068
+Inference Time (ms): 6.383
+Epoch=22 Loss=2.885631 CL=6.771720
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4160439968109131
+std = 0.670427143573761
+min = 0.0
+max = 4.286071300506592
+Inference Time (ms): 4.893
+Epoch=23 Loss=2.840435 CL=6.765814
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41686585545539856
+std = 0.6757301688194275
+min = 0.0
+max = 4.367941379547119
+Inference Time (ms): 4.966
+Epoch=24 Loss=2.793821 CL=6.754344
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41732683777809143
+std = 0.6813598275184631
+min = 0.0
+max = 4.465993404388428
+Inference Time (ms): 4.961
+Epoch=25 Loss=2.748568 CL=6.751754
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4175819158554077
+std = 0.6866117715835571
+min = 0.0
+max = 4.432596683502197
+Inference Time (ms): 4.935
+Epoch=26 Loss=2.701631 CL=6.747199
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4177477955818176
+std = 0.6924752593040466
+min = 0.0
+max = 4.496008396148682
+Inference Time (ms): 4.885
+Epoch=27 Loss=2.654663 CL=6.738885
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4178828001022339
+std = 0.6974914073944092
+min = 0.0
+max = 4.536806106567383
+Inference Time (ms): 4.892
+Epoch=28 Loss=2.607622 CL=6.732025
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41784045100212097
+std = 0.7021097540855408
+min = 0.0
+max = 4.567934989929199
+Inference Time (ms): 4.936
+Epoch=29 Loss=2.560150 CL=6.727730
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4181177318096161
+std = 0.705880343914032
+min = 0.0
+max = 4.6305623054504395
+Inference Time (ms): 4.895
+Epoch=30 Loss=2.512179 CL=6.722159
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4185720980167389
+std = 0.7092865705490112
+min = 0.0
+max = 4.755241870880127
+Inference Time (ms): 4.905
+Epoch=31 Loss=2.465542 CL=6.719007
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.418876975774765
+std = 0.712919294834137
+min = 0.0
+max = 4.719274520874023
+Inference Time (ms): 4.833
+Epoch=32 Loss=2.416736 CL=6.716649
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41929641366004944
+std = 0.7165511250495911
+min = 0.0
+max = 4.807210922241211
+Inference Time (ms): 5.11
+Epoch=33 Loss=2.368949 CL=6.710773
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41964662075042725
+std = 0.7199314832687378
+min = 0.0
+max = 4.828132152557373
+Inference Time (ms): 6.553
+Epoch=34 Loss=2.320463 CL=6.709048
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4200592637062073
+std = 0.7235890626907349
+min = 0.0
+max = 4.938810348510742
+Inference Time (ms): 7.123
+Epoch=35 Loss=2.273669 CL=6.706794
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4206730127334595
+std = 0.7268821597099304
+min = 0.0
+max = 4.932298183441162
+Inference Time (ms): 5.593
+Epoch=36 Loss=2.222634 CL=6.703947
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42105382680892944
+std = 0.7302131652832031
+min = 0.0
+max = 4.875423908233643
+Inference Time (ms): 5.169
+Epoch=37 Loss=2.174738 CL=6.700050
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4219985604286194
+std = 0.7323300838470459
+min = 0.0
+max = 4.874499320983887
+Inference Time (ms): 6.65
+Epoch=38 Loss=2.125581 CL=6.702112
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4227468967437744
+std = 0.7346609830856323
+min = 0.0
+max = 4.9100542068481445
+Inference Time (ms): 6.579
+Epoch=39 Loss=2.079391 CL=6.697135
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4236927926540375
+std = 0.7366827726364136
+min = 0.0
+max = 4.89372444152832
+Inference Time (ms): 7.129
+Epoch=40 Loss=2.029549 CL=6.696592
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4243364632129669
+std = 0.7389052510261536
+min = 0.0
+max = 4.916328430175781
+Inference Time (ms): 5.437
+Epoch=41 Loss=1.982780 CL=6.693698
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4249204695224762
+std = 0.7419029474258423
+min = 0.0
+max = 4.975341796875
+Inference Time (ms): 5.208
+Epoch=42 Loss=1.935518 CL=6.693045
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42519235610961914
+std = 0.7454044222831726
+min = 0.0
+max = 5.003195762634277
+Inference Time (ms): 5.163
+Epoch=43 Loss=1.889220 CL=6.685517
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42585593461990356
+std = 0.7481881380081177
+min = 0.0
+max = 5.040302276611328
+Inference Time (ms): 7.615
+Epoch=44 Loss=1.844703 CL=6.693071
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42644068598747253
+std = 0.751107394695282
+min = 0.0
+max = 5.0603179931640625
+Inference Time (ms): 5.548
+Epoch=45 Loss=1.798742 CL=6.688480
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.427334189414978
+std = 0.7539961338043213
+min = 0.0
+max = 5.0824103355407715
+Inference Time (ms): 5.412
+Epoch=46 Loss=1.753060 CL=6.685846
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42765793204307556
+std = 0.7568379640579224
+min = 0.0
+max = 5.032861709594727
+Inference Time (ms): 5.059
+Epoch=47 Loss=1.710071 CL=6.685111
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42855724692344666
+std = 0.759547770023346
+min = 0.0
+max = 5.074197292327881
+Inference Time (ms): 6.889
+Epoch=48 Loss=1.668568 CL=6.684450
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4301333725452423
+std = 0.761246383190155
+min = 0.0
+max = 5.06132698059082
+Inference Time (ms): 6.997
+Epoch=49 Loss=1.626456 CL=6.681225
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4308357536792755
+std = 0.7633731365203857
+min = 0.0
+max = 5.0198140144348145
+Inference Time (ms): 7.256
+Epoch=50 Loss=1.587625 CL=6.680637
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4307217597961426
+std = 0.7667601108551025
+min = 0.0
+max = 4.9937896728515625
+Inference Time (ms): 5.105
+Epoch=51 Loss=1.550316 CL=6.680490
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4318298399448395
+std = 0.7692111730575562
+min = 0.0
+max = 5.0457658767700195
+Inference Time (ms): 4.955
+Epoch=52 Loss=1.511607 CL=6.678672
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4332408905029297
+std = 0.7714870572090149
+min = 0.0
+max = 5.066795825958252
+Inference Time (ms): 4.974
+Epoch=53 Loss=1.478963 CL=6.680241
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43374136090278625
+std = 0.7748335599899292
+min = 0.0
+max = 5.0685272216796875
+Inference Time (ms): 4.984
+Epoch=54 Loss=1.442856 CL=6.672750
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43439364433288574
+std = 0.7775512933731079
+min = 0.0
+max = 5.045620918273926
+Inference Time (ms): 4.953
+Epoch=55 Loss=1.407841 CL=6.670551
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4356021583080292
+std = 0.7797419428825378
+min = 0.0
+max = 5.051219940185547
+Inference Time (ms): 4.982
+Epoch=56 Loss=1.376315 CL=6.673120
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43639907240867615
+std = 0.782145619392395
+min = 0.0
+max = 5.033930778503418
+Inference Time (ms): 4.915
+Epoch=57 Loss=1.346743 CL=6.667072
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4371209144592285
+std = 0.7840904593467712
+min = 0.0
+max = 5.109935760498047
+Inference Time (ms): 4.882
+Epoch=58 Loss=1.315151 CL=6.670286
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4379975497722626
+std = 0.7861217856407166
+min = 0.0
+max = 5.265892505645752
+Inference Time (ms): 4.891
+Epoch=59 Loss=1.286776 CL=6.667807
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4392964243888855
+std = 0.7872624397277832
+min = 0.0
+max = 5.0613932609558105
+Inference Time (ms): 5.014
+Epoch=60 Loss=1.258787 CL=6.667078
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44036123156547546
+std = 0.7895496487617493
+min = 0.0
+max = 5.056729793548584
+Inference Time (ms): 5.185
+Epoch=61 Loss=1.230919 CL=6.664587
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4410626292228699
+std = 0.7923453450202942
+min = 0.0
+max = 5.1582231521606445
+Inference Time (ms): 5.031
+Epoch=62 Loss=1.209569 CL=6.667160
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44210267066955566
+std = 0.7943530678749084
+min = 0.0
+max = 5.191110134124756
+Inference Time (ms): 5.409
+Epoch=63 Loss=1.183363 CL=6.665714
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4427139461040497
+std = 0.7963102459907532
+min = 0.0
+max = 5.254558563232422
+Inference Time (ms): 6.299
+Epoch=64 Loss=1.158983 CL=6.664162
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4430241882801056
+std = 0.7981234192848206
+min = 0.0
+max = 5.136345386505127
+Inference Time (ms): 5.224
+Epoch=65 Loss=1.139674 CL=6.665648
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4436984360218048
+std = 0.8005594611167908
+min = 0.0
+max = 5.113676071166992
+Inference Time (ms): 6.458
+Epoch=66 Loss=1.118023 CL=6.660295
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44460615515708923
+std = 0.8019358515739441
+min = 0.0
+max = 5.109379768371582
+Inference Time (ms): 5.02
+Epoch=67 Loss=1.100987 CL=6.663284
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44477027654647827
+std = 0.8041023015975952
+min = 0.0
+max = 5.1981611251831055
+Inference Time (ms): 5.002
+Epoch=68 Loss=1.079248 CL=6.655842
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44508424401283264
+std = 0.8065057396888733
+min = 0.0
+max = 5.154682159423828
+Inference Time (ms): 4.989
+Epoch=69 Loss=1.060273 CL=6.655958
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4452834725379944
+std = 0.8078117966651917
+min = 0.0
+max = 5.158048152923584
+Inference Time (ms): 4.924
+Epoch=70 Loss=1.041527 CL=6.655768
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4457349181175232
+std = 0.8096566200256348
+min = 0.0
+max = 5.116556644439697
+Inference Time (ms): 4.932
+Epoch=71 Loss=1.028288 CL=6.655645
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44634512066841125
+std = 0.8111568689346313
+min = 0.0
+max = 5.198988914489746
+Inference Time (ms): 4.871
+Epoch=72 Loss=1.013482 CL=6.659487
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4468764662742615
+std = 0.812187910079956
+min = 0.0
+max = 5.179335117340088
+Inference Time (ms): 4.859
+Epoch=73 Loss=0.997460 CL=6.656138
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4473574161529541
+std = 0.8132014274597168
+min = 0.0
+max = 5.165738582611084
+Inference Time (ms): 4.809
+Epoch=74 Loss=0.982854 CL=6.656249
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4478408992290497
+std = 0.8141611218452454
+min = 0.0
+max = 5.1537346839904785
+Inference Time (ms): 4.849
+Epoch=75 Loss=0.972239 CL=6.652193
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4484863579273224
+std = 0.8156878352165222
+min = 0.0
+max = 5.459908485412598
+Inference Time (ms): 5.191
+Epoch=76 Loss=0.960498 CL=6.651042
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4487301707267761
+std = 0.8183327317237854
+min = 0.0
+max = 5.446834564208984
+Inference Time (ms): 5.039
+Epoch=77 Loss=0.946956 CL=6.652594
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4489554464817047
+std = 0.8195542097091675
+min = 0.0
+max = 5.362171173095703
+Inference Time (ms): 7.24
+Epoch=78 Loss=0.935731 CL=6.648136
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44846010208129883
+std = 0.8208695650100708
+min = 0.0
+max = 5.286899089813232
+Inference Time (ms): 6.855
+Epoch=79 Loss=0.924040 CL=6.649911
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4486759901046753
+std = 0.8212642669677734
+min = 0.0
+max = 5.343297004699707
+Inference Time (ms): 7.292
+Epoch=80 Loss=0.917632 CL=6.655290
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4491864740848541
+std = 0.8230737447738647
+min = 0.0
+max = 5.530207633972168
+Inference Time (ms): 5.349
+Epoch=81 Loss=0.905346 CL=6.648144
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.449957937002182
+std = 0.8245635628700256
+min = 0.0
+max = 5.662266254425049
+Inference Time (ms): 6.547
+Epoch=82 Loss=0.895982 CL=6.644637
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.449940025806427
+std = 0.8256571292877197
+min = 0.0
+max = 5.392492294311523
+Inference Time (ms): 6.192
+Epoch=83 Loss=0.887367 CL=6.646534
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45056217908859253
+std = 0.8264841437339783
+min = 0.0
+max = 5.537459373474121
+Inference Time (ms): 5.102
+Epoch=84 Loss=0.875246 CL=6.644464
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4514361321926117
+std = 0.825883150100708
+min = 0.0
+max = 5.346538543701172
+Inference Time (ms): 5.037
+Epoch=85 Loss=0.868705 CL=6.642738
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45152580738067627
+std = 0.8273830413818359
+min = 0.0
+max = 5.420516014099121
+Inference Time (ms): 6.816
+Epoch=86 Loss=0.855363 CL=6.641093
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45196929574012756
+std = 0.8283585906028748
+min = 0.0
+max = 5.693717956542969
+Inference Time (ms): 6.907
+Epoch=87 Loss=0.846965 CL=6.638978
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4524783790111542
+std = 0.8293450474739075
+min = 0.0
+max = 6.333519458770752
+Inference Time (ms): 6.46
+Epoch=88 Loss=0.840873 CL=6.639443
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4531511962413788
+std = 0.8299179673194885
+min = 0.0
+max = 5.517501354217529
+Inference Time (ms): 7.098
+Epoch=89 Loss=0.831622 CL=6.639153
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45372310280799866
+std = 0.830597460269928
+min = 0.0
+max = 5.27010440826416
+Inference Time (ms): 6.894
+Epoch=90 Loss=0.825517 CL=6.639153
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4541580080986023
+std = 0.8314253687858582
+min = 0.0
+max = 5.427211761474609
+Inference Time (ms): 6.011
+Epoch=91 Loss=0.815825 CL=6.637767
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4541919529438019
+std = 0.8322917819023132
+min = 0.0
+max = 5.382415294647217
+Inference Time (ms): 5.529
+Epoch=92 Loss=0.808996 CL=6.637705
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4551233947277069
+std = 0.8327369093894958
+min = 0.0
+max = 5.158080577850342
+Inference Time (ms): 5.105
+Epoch=93 Loss=0.802270 CL=6.634228
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45535027980804443
+std = 0.83341383934021
+min = 0.0
+max = 5.172557353973389
+Inference Time (ms): 5.148
+Epoch=94 Loss=0.794737 CL=6.638743
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4553055763244629
+std = 0.8344787955284119
+min = 0.0
+max = 5.202963829040527
+Inference Time (ms): 4.956
+Epoch=95 Loss=0.789003 CL=6.636391
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4552237391471863
+std = 0.8356475234031677
+min = 0.0
+max = 5.37489652633667
+Inference Time (ms): 5.001
+Epoch=96 Loss=0.786632 CL=6.639020
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.455840140581131
+std = 0.8371187448501587
+min = 0.0
+max = 5.259273052215576
+Inference Time (ms): 4.978
+Epoch=97 Loss=0.778117 CL=6.634449
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45590320229530334
+std = 0.8378549814224243
+min = 0.0
+max = 5.157954216003418
+Inference Time (ms): 4.993
+Epoch=98 Loss=0.774821 CL=6.634194
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4561496675014496
+std = 0.8377147316932678
+min = 0.0
+max = 5.523372173309326
+Inference Time (ms): 4.925
+Epoch=99 Loss=0.767317 CL=6.631992
+Generator Parameters: 437955
+Total Parameters: 845165
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40665140748023987
+std = 0.5774160623550415
+min = 0.0
+max = 2.8877360820770264
+Inference Time (ms): 5.027
+
+===== LOGIT DEBUG =====
+out shape: torch.Size([2224, 20])
+first row: tensor([-3.2773, -3.1701, -2.8132, -3.1580, -2.9583, -3.3012, -2.9848, -3.2553,
+        -3.0482, -3.4504, -2.8932, -3.0803, -2.7990, -3.3676, -2.8520, -2.8281,
+        -3.0594, -2.4795, -2.8450, -2.8416])
+pred counts: tensor([   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0, 2205,   19])
+
+===== EMBEDDING CHECK =====
+logits mean = -3.0220091342926025
+logits std  = 0.2280416190624237
+logits min  = -3.4702930450439453
+logits max  = -2.45721697807312
+unique predicted classes = tensor([17, 18], device='cuda:0')
+num predicted classes = 2
+prob mean = 0.05000000074505806
+prob std  = 0.011674221605062485
+Epoch=0 Loss=3.838609 CL=7.992953
+
+===== DATA DEBUG BEFORE EVAL =====
+edge min: 2224
+edge max: 6671
+edge shape: torch.Size([2, 15568])
+x sum: -132598.078125
+
+===== OUT DEBUG =====
+result[6] shape: torch.Size([2224, 20])
+first logits:
+tensor([-3.2773, -3.1701, -2.8132, -3.1580, -2.9583, -3.3012, -2.9848, -3.2553,
+        -3.0482, -3.4504, -2.8932, -3.0803, -2.7990, -3.3676, -2.8520, -2.8281,
+        -3.0594, -2.4795, -2.8450, -2.8416])
+
+===== EVAL DEBUG =====
+edge min: 2224
+edge max: 6671
+train_acc = 0.026079136690647483
+valid_acc = 0.04054054054054054
+test_acc = 0.04044943820224719
+eval pred counts:
+tensor([   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0, 2205,   19])
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40754276514053345
+std = 0.5575997829437256
+min = 0.0
+max = 2.7015883922576904
+Inference Time (ms): 4.841
+Epoch=1 Loss=3.789265 CL=7.844614
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4051109850406647
+std = 0.5501136183738708
+min = 0.0
+max = 2.704463481903076
+Inference Time (ms): 4.853
+Epoch=2 Loss=3.733042 CL=7.643765
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40420299768447876
+std = 0.5459765791893005
+min = 0.0
+max = 2.8885397911071777
+Inference Time (ms): 4.921
+Epoch=3 Loss=3.676198 CL=7.447401
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40496474504470825
+std = 0.5434934496879578
+min = 0.0
+max = 2.8587300777435303
+Inference Time (ms): 4.931
+Epoch=4 Loss=3.626173 CL=7.311186
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4065295457839966
+std = 0.544216513633728
+min = 0.0
+max = 2.9365718364715576
+Inference Time (ms): 5.166
+Epoch=5 Loss=3.574666 CL=7.184170
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40796810388565063
+std = 0.5497999787330627
+min = 0.0
+max = 3.113469123840332
+Inference Time (ms): 5.223
+Epoch=6 Loss=3.528032 CL=7.072134
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40850841999053955
+std = 0.5571421980857849
+min = 0.0
+max = 3.1273093223571777
+Inference Time (ms): 6.991
+Epoch=7 Loss=3.485073 CL=7.008272
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.40949469804763794
+std = 0.5654105544090271
+min = 0.0
+max = 3.5028436183929443
+Inference Time (ms): 6.164
+Epoch=8 Loss=3.443954 CL=6.969372
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41052472591400146
+std = 0.5723171830177307
+min = 0.0
+max = 3.7316975593566895
+Inference Time (ms): 4.982
+Epoch=9 Loss=3.402610 CL=6.943081
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4109744429588318
+std = 0.5779610276222229
+min = 0.0
+max = 3.8732872009277344
+Inference Time (ms): 4.995
+Epoch=10 Loss=3.360974 CL=6.917769
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4113846719264984
+std = 0.5827612280845642
+min = 0.0
+max = 4.080452919006348
+Inference Time (ms): 4.965
+Epoch=11 Loss=3.318658 CL=6.897641
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4121227562427521
+std = 0.5880028009414673
+min = 0.0
+max = 3.969437599182129
+Inference Time (ms): 4.911
+Epoch=12 Loss=3.276418 CL=6.881335
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4128250181674957
+std = 0.5948432683944702
+min = 0.0
+max = 4.137945652008057
+Inference Time (ms): 4.854
+Epoch=13 Loss=3.232425 CL=6.868912
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41330915689468384
+std = 0.601479172706604
+min = 0.0
+max = 4.173874378204346
+Inference Time (ms): 4.853
+Epoch=14 Loss=3.187077 CL=6.852060
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41416794061660767
+std = 0.6081383228302002
+min = 0.0
+max = 3.9660117626190186
+Inference Time (ms): 4.909
+Epoch=15 Loss=3.141949 CL=6.837884
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41465622186660767
+std = 0.616328239440918
+min = 0.0
+max = 3.968230962753296
+Inference Time (ms): 4.912
+Epoch=16 Loss=3.096089 CL=6.825788
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4153469502925873
+std = 0.6245517134666443
+min = 0.0
+max = 3.788501739501953
+Inference Time (ms): 4.912
+Epoch=17 Loss=3.049620 CL=6.814550
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4157395362854004
+std = 0.633108377456665
+min = 0.0
+max = 3.7654457092285156
+Inference Time (ms): 5.172
+Epoch=18 Loss=3.002713 CL=6.804049
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41594621539115906
+std = 0.6404613256454468
+min = 0.0
+max = 3.7396388053894043
+Inference Time (ms): 6.517
+Epoch=19 Loss=2.955605 CL=6.796610
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4162621796131134
+std = 0.6476454734802246
+min = 0.0
+max = 3.8984556198120117
+Inference Time (ms): 6.83
+Epoch=20 Loss=2.908591 CL=6.796690
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4165891706943512
+std = 0.6536109447479248
+min = 0.0
+max = 3.892267942428589
+Inference Time (ms): 6.178
+Epoch=21 Loss=2.860091 CL=6.785655
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4168970286846161
+std = 0.658774197101593
+min = 0.0
+max = 3.9808788299560547
+Inference Time (ms): 6.897
+Epoch=22 Loss=2.814327 CL=6.780758
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4172073006629944
+std = 0.6647666692733765
+min = 0.0
+max = 3.974059581756592
+Inference Time (ms): 7.099
+Epoch=23 Loss=2.766155 CL=6.775051
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4178081154823303
+std = 0.6694844365119934
+min = 0.0
+max = 4.139399528503418
+Inference Time (ms): 7.186
+Epoch=24 Loss=2.718577 CL=6.767102
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41851094365119934
+std = 0.6734914779663086
+min = 0.0
+max = 4.134847640991211
+Inference Time (ms): 5.081
+Epoch=25 Loss=2.670523 CL=6.762585
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41913315653800964
+std = 0.6783850193023682
+min = 0.0
+max = 4.235458850860596
+Inference Time (ms): 7.224
+Epoch=26 Loss=2.623370 CL=6.761757
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41938501596450806
+std = 0.6833524107933044
+min = 0.0
+max = 4.30693244934082
+Inference Time (ms): 5.142
+Epoch=27 Loss=2.573386 CL=6.754628
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.41985616087913513
+std = 0.6880203485488892
+min = 0.0
+max = 4.361775875091553
+Inference Time (ms): 5.076
+Epoch=28 Loss=2.525187 CL=6.747386
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4204747974872589
+std = 0.6918451189994812
+min = 0.0
+max = 4.367677211761475
+Inference Time (ms): 5.418
+Epoch=29 Loss=2.474811 CL=6.743554
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4210752248764038
+std = 0.6953781843185425
+min = 0.0
+max = 4.432755470275879
+Inference Time (ms): 6.674
+Epoch=30 Loss=2.424248 CL=6.740120
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42117026448249817
+std = 0.699587345123291
+min = 0.0
+max = 4.482586860656738
+Inference Time (ms): 6.618
+Epoch=31 Loss=2.376003 CL=6.735854
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42128491401672363
+std = 0.7040595412254333
+min = 0.0
+max = 4.462345123291016
+Inference Time (ms): 6.552
+Epoch=32 Loss=2.326558 CL=6.726684
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42155152559280396
+std = 0.7079730033874512
+min = 0.0
+max = 4.4634199142456055
+Inference Time (ms): 7.465
+Epoch=33 Loss=2.278267 CL=6.728587
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42189154028892517
+std = 0.7115465998649597
+min = 0.0
+max = 4.484551906585693
+Inference Time (ms): 8.401
+Epoch=34 Loss=2.229523 CL=6.726383
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4219091236591339
+std = 0.7162222862243652
+min = 0.0
+max = 4.489216327667236
+Inference Time (ms): 6.054
+Epoch=35 Loss=2.181000 CL=6.718911
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.422617644071579
+std = 0.7192656993865967
+min = 0.0
+max = 4.5082478523254395
+Inference Time (ms): 6.559
+Epoch=36 Loss=2.134072 CL=6.721017
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42311200499534607
+std = 0.7223771810531616
+min = 0.0
+max = 4.524662494659424
+Inference Time (ms): 7.09
+Epoch=37 Loss=2.085135 CL=6.715312
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4234614074230194
+std = 0.7261790037155151
+min = 0.0
+max = 4.550732135772705
+Inference Time (ms): 4.96
+Epoch=38 Loss=2.040542 CL=6.713852
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4241408109664917
+std = 0.7293358445167542
+min = 0.0
+max = 4.595144271850586
+Inference Time (ms): 4.95
+Epoch=39 Loss=1.991878 CL=6.712202
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42452457547187805
+std = 0.7328256368637085
+min = 0.0
+max = 4.552821636199951
+Inference Time (ms): 5.14
+Epoch=40 Loss=1.945077 CL=6.708399
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4252118468284607
+std = 0.7354084849357605
+min = 0.0
+max = 4.596048831939697
+Inference Time (ms): 5.04
+Epoch=41 Loss=1.900659 CL=6.702080
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4253876507282257
+std = 0.7396492958068848
+min = 0.0
+max = 4.6147990226745605
+Inference Time (ms): 4.957
+Epoch=42 Loss=1.856728 CL=6.705255
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4259771406650543
+std = 0.7430239915847778
+min = 0.0
+max = 4.601306438446045
+Inference Time (ms): 4.892
+Epoch=43 Loss=1.813021 CL=6.695786
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42654791474342346
+std = 0.7456732392311096
+min = 0.0
+max = 4.662232398986816
+Inference Time (ms): 4.883
+Epoch=44 Loss=1.768487 CL=6.698196
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42689356207847595
+std = 0.7488179206848145
+min = 0.0
+max = 4.668816566467285
+Inference Time (ms): 6.935
+Epoch=45 Loss=1.729340 CL=6.700604
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42720121145248413
+std = 0.7521280646324158
+min = 0.0
+max = 4.64607048034668
+Inference Time (ms): 4.884
+Epoch=46 Loss=1.686883 CL=6.699982
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.42785152792930603
+std = 0.7550029158592224
+min = 0.0
+max = 4.723386764526367
+Inference Time (ms): 4.918
+Epoch=47 Loss=1.649983 CL=6.709178
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4285171329975128
+std = 0.7578132748603821
+min = 0.0
+max = 4.611843585968018
+Inference Time (ms): 4.923
+Epoch=48 Loss=1.610456 CL=6.703598
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4289771020412445
+std = 0.7605694532394409
+min = 0.0
+max = 4.64502477645874
+Inference Time (ms): 4.929
+Epoch=49 Loss=1.576325 CL=6.705822
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4296945333480835
+std = 0.7632569670677185
+min = 0.0
+max = 4.6721510887146
+Inference Time (ms): 4.965
+Epoch=50 Loss=1.537429 CL=6.700902
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.431048184633255
+std = 0.7650820016860962
+min = 0.0
+max = 4.706517219543457
+Inference Time (ms): 5.589
+Epoch=51 Loss=1.502936 CL=6.695557
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43210574984550476
+std = 0.767387866973877
+min = 0.0
+max = 4.6678571701049805
+Inference Time (ms): 9.048
+Epoch=52 Loss=1.466848 CL=6.701855
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4328625202178955
+std = 0.7690742611885071
+min = 0.0
+max = 4.638460636138916
+Inference Time (ms): 7.578
+Epoch=53 Loss=1.439491 CL=6.701752
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43400606513023376
+std = 0.7717785835266113
+min = 0.0
+max = 4.627007484436035
+Inference Time (ms): 5.918
+Epoch=54 Loss=1.401017 CL=6.696312
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43523913621902466
+std = 0.7735314965248108
+min = 0.0
+max = 4.761894226074219
+Inference Time (ms): 5.01
+Epoch=55 Loss=1.370730 CL=6.691350
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43613097071647644
+std = 0.7755821943283081
+min = 0.0
+max = 4.654460430145264
+Inference Time (ms): 4.963
+Epoch=56 Loss=1.343183 CL=6.691106
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4371481239795685
+std = 0.7767590880393982
+min = 0.0
+max = 4.712741851806641
+Inference Time (ms): 4.942
+Epoch=57 Loss=1.316603 CL=6.695993
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43824079632759094
+std = 0.7779150605201721
+min = 0.0
+max = 4.564178943634033
+Inference Time (ms): 4.895
+Epoch=58 Loss=1.290807 CL=6.688121
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43940964341163635
+std = 0.7803351879119873
+min = 0.0
+max = 4.6687493324279785
+Inference Time (ms): 4.874
+Epoch=59 Loss=1.265952 CL=6.691635
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43931156396865845
+std = 0.7834194302558899
+min = 0.0
+max = 4.561548709869385
+Inference Time (ms): 4.836
+Epoch=60 Loss=1.241206 CL=6.684770
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.43965962529182434
+std = 0.7854877710342407
+min = 0.0
+max = 4.558503150939941
+Inference Time (ms): 4.894
+Epoch=61 Loss=1.220639 CL=6.688651
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4403800368309021
+std = 0.7877574563026428
+min = 0.0
+max = 4.691545009613037
+Inference Time (ms): 4.804
+Epoch=62 Loss=1.194997 CL=6.682779
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4415891468524933
+std = 0.7891165614128113
+min = 0.0
+max = 4.552842140197754
+Inference Time (ms): 4.806
+Epoch=63 Loss=1.176137 CL=6.692696
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4423414468765259
+std = 0.7902187705039978
+min = 0.0
+max = 4.638402938842773
+Inference Time (ms): 5.208
+Epoch=64 Loss=1.161736 CL=6.685350
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44360780715942383
+std = 0.7917749881744385
+min = 0.0
+max = 4.584260940551758
+Inference Time (ms): 5.275
+Epoch=65 Loss=1.133563 CL=6.679656
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4448296129703522
+std = 0.7923855185508728
+min = 0.0
+max = 4.581467151641846
+Inference Time (ms): 7.694
+Epoch=66 Loss=1.121384 CL=6.681460
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4458610713481903
+std = 0.79410719871521
+min = 0.0
+max = 4.598372459411621
+Inference Time (ms): 5.645
+Epoch=67 Loss=1.099843 CL=6.681182
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44604602456092834
+std = 0.7962971925735474
+min = 0.0
+max = 4.597635746002197
+Inference Time (ms): 5.666
+Epoch=68 Loss=1.082915 CL=6.685817
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44672900438308716
+std = 0.7963917255401611
+min = 0.0
+max = 4.6289496421813965
+Inference Time (ms): 5.27
+Epoch=69 Loss=1.068115 CL=6.681556
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4471452832221985
+std = 0.7984883785247803
+min = 0.0
+max = 4.6592559814453125
+Inference Time (ms): 5.19
+Epoch=70 Loss=1.052713 CL=6.677178
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44775745272636414
+std = 0.7996141910552979
+min = 0.0
+max = 4.68420934677124
+Inference Time (ms): 5.234
+Epoch=71 Loss=1.036988 CL=6.674183
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4484878182411194
+std = 0.8010789155960083
+min = 0.0
+max = 4.50408935546875
+Inference Time (ms): 5.074
+Epoch=72 Loss=1.023005 CL=6.675623
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44891807436943054
+std = 0.8024919033050537
+min = 0.0
+max = 4.644138336181641
+Inference Time (ms): 5.035
+Epoch=73 Loss=1.008059 CL=6.674829
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4494570791721344
+std = 0.8038148283958435
+min = 0.0
+max = 4.593620300292969
+Inference Time (ms): 4.982
+Epoch=74 Loss=0.992937 CL=6.674573
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.44952788949012756
+std = 0.8045176863670349
+min = 0.0
+max = 4.625799179077148
+Inference Time (ms): 4.971
+Epoch=75 Loss=0.980659 CL=6.670376
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45003819465637207
+std = 0.8055794835090637
+min = 0.0
+max = 4.652893543243408
+Inference Time (ms): 5.326
+Epoch=76 Loss=0.972498 CL=6.668728
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45051488280296326
+std = 0.8071268796920776
+min = 0.0
+max = 4.705029010772705
+Inference Time (ms): 6.827
+Epoch=77 Loss=0.962344 CL=6.667456
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45179539918899536
+std = 0.8077418804168701
+min = 0.0
+max = 4.767212867736816
+Inference Time (ms): 7.271
+Epoch=78 Loss=0.949481 CL=6.672229
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4523570239543915
+std = 0.8088276386260986
+min = 0.0
+max = 4.732243537902832
+Inference Time (ms): 6.458
+Epoch=79 Loss=0.936472 CL=6.664144
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45296046137809753
+std = 0.8093242049217224
+min = 0.0
+max = 4.7737603187561035
+Inference Time (ms): 6.963
+Epoch=80 Loss=0.924929 CL=6.661522
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4535125195980072
+std = 0.8106510043144226
+min = 0.0
+max = 4.8042755126953125
+Inference Time (ms): 7.22
+Epoch=81 Loss=0.911775 CL=6.665334
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45364663004875183
+std = 0.8121289610862732
+min = 0.0
+max = 4.819626808166504
+Inference Time (ms): 6.416
+Epoch=82 Loss=0.907340 CL=6.664363
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45406582951545715
+std = 0.8134889602661133
+min = 0.0
+max = 4.860824108123779
+Inference Time (ms): 5.227
+Epoch=83 Loss=0.895394 CL=6.662633
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4537636339664459
+std = 0.8155583739280701
+min = 0.0
+max = 4.832241535186768
+Inference Time (ms): 4.866
+Epoch=84 Loss=0.883651 CL=6.660248
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4538986384868622
+std = 0.8178806304931641
+min = 0.0
+max = 4.897493839263916
+Inference Time (ms): 4.919
+Epoch=85 Loss=0.870128 CL=6.663157
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45420485734939575
+std = 0.8187849521636963
+min = 0.0
+max = 4.820078372955322
+Inference Time (ms): 4.936
+Epoch=86 Loss=0.866369 CL=6.660867
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45460501313209534
+std = 0.8205665349960327
+min = 0.0
+max = 4.9823384284973145
+Inference Time (ms): 4.9
+Epoch=87 Loss=0.859610 CL=6.661680
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45507460832595825
+std = 0.8222329616546631
+min = 0.0
+max = 5.097253799438477
+Inference Time (ms): 4.961
+Epoch=88 Loss=0.851601 CL=6.661859
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4562024772167206
+std = 0.8223646879196167
+min = 0.0
+max = 5.178579807281494
+Inference Time (ms): 4.867
+Epoch=89 Loss=0.840868 CL=6.655169
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45681527256965637
+std = 0.8228756785392761
+min = 0.0
+max = 5.025924205780029
+Inference Time (ms): 4.849
+Epoch=90 Loss=0.840939 CL=6.655643
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45775869488716125
+std = 0.8234200477600098
+min = 0.0
+max = 5.195339679718018
+Inference Time (ms): 4.835
+Epoch=91 Loss=0.833611 CL=6.659005
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4581236243247986
+std = 0.824843168258667
+min = 0.0
+max = 5.202980041503906
+Inference Time (ms): 4.795
+Epoch=92 Loss=0.826665 CL=6.652572
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4584537744522095
+std = 0.8254929780960083
+min = 0.0
+max = 5.1506242752075195
+Inference Time (ms): 4.776
+Epoch=93 Loss=0.820906 CL=6.653797
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45790109038352966
+std = 0.8273885250091553
+min = 0.0
+max = 5.1957502365112305
+Inference Time (ms): 4.786
+Epoch=94 Loss=0.811478 CL=6.647796
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4575924873352051
+std = 0.8285830616950989
+min = 0.0
+max = 5.338942527770996
+Inference Time (ms): 5.145
+Epoch=95 Loss=0.810203 CL=6.652672
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45686379075050354
+std = 0.8309491872787476
+min = 0.0
+max = 5.107275485992432
+Inference Time (ms): 7.442
+Epoch=96 Loss=0.806482 CL=6.650154
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45681363344192505
+std = 0.8317819833755493
+min = 0.0
+max = 5.046901226043701
+Inference Time (ms): 5.286
+Epoch=97 Loss=0.802045 CL=6.651108
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.45713692903518677
+std = 0.8325275778770447
+min = 0.0
+max = 5.084674835205078
+Inference Time (ms): 5.14
+Epoch=98 Loss=0.794835 CL=6.648020
+
+===== PRE-CLASSIFIER STATS =====
+mean = 0.4569413363933563
+std = 0.8343678712844849
+min = 0.0
+max = 5.108116149902344
+Inference Time (ms): 4.929
+Epoch=99 Loss=0.790680 CL=6.651047
+All runs:
+best epoch: [tensor(55), tensor(73), tensor(61), tensor(67), tensor(59)]
+Highest Train: 98.36 ± 0.27
+Highest Valid: 88.38 ± 1.64
+  Final Train: 92.45 ± 1.52
+   Final Test: 85.35 ± 0.82
+
+===== FINAL METRICS =====
+accuracy: 85.17
+precision: 85.31
+recall: 85.01
+f1: 84.27
+w_precision: 85.42
+w_recall: 85.17
+w_f1: 84.72
+
+===== CLASSIFICATION REPORT =====
+              precision    recall  f1-score   support
+
+           0     0.8889    0.9057    0.8972        53
+           1     0.9500    0.9500    0.9500        20
+           2     0.9531    0.9839    0.9683        62
+           3     0.8571    0.7317    0.7895        41
+           4     0.6538    0.9444    0.7727        18
+           5     0.8684    0.9167    0.8919        36
+           6     0.8750    0.8974    0.8861        39
+           7     0.7656    0.8033    0.7840       122
+           8     0.7143    0.7500    0.7317        40
+           9     0.7391    0.8500    0.7907        20
+          10     0.8571    1.0000    0.9231        24
+          11     0.7699    0.8208    0.7945       106
+          12     0.9211    0.8974    0.9091        39
+          13     0.9333    0.7368    0.8235        19
+          14     0.9143    0.8889    0.9014        36
+          15     0.7647    0.9286    0.8387        14
+          16     0.9545    0.9438    0.9492        89
+          17     0.9310    0.7714    0.8438        35
+          18     0.7500    0.2812    0.4091        32
+          19     1.0000    1.0000    1.0000        45
+
+    accuracy                         0.8517       890
+   macro avg     0.8531    0.8501    0.8427       890
+weighted avg     0.8542    0.8517    0.8472       890
+
+
+===== CLASS 18 ANALYSIS =====
+True class 18: 32
+Predicted class 18: 12
+Correct class 18: 9
+
+CLASS 18 CONFUSION ROW:
+[0 0 0 0 1 3 1 8 4 1 0 2 0 0 1 1 1 0 9 0]
+BEST_VAL_VECTOR = [87.38739013671875, 90.090087890625, 87.83783721923828, 86.48648834228516, 90.090087890625]
+BEST_TEST_VECTOR = [85.16854095458984, 85.28089904785156, 86.74156951904297, 84.94381713867188, 84.60674285888672]
+Saving results to hyperparameter_tunning/Auto_MIntRec_noise_1.csv
+All done! Exit python code

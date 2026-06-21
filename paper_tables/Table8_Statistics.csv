@@ -1,0 +1,13 @@
+Dataset,Metric,t_value,p_value
+MIntRec,ACC,0.37,0.7281
+MIntRec,P,0.42,0.6989
+MIntRec,R,-0.09,0.9294
+MIntRec,F1,0.25,0.8140
+MIntRec,WP,0.41,0.7059
+MIntRec,WF1,0.44,0.6826
+MIntRec2.0,ACC,-0.75,0.4950
+MIntRec2.0,P,0.09,0.9311
+MIntRec2.0,R,0.97,0.3887
+MIntRec2.0,F1,0.08,0.9413
+MIntRec2.0,WP,0.23,0.8273
+MIntRec2.0,WF1,-0.21,0.8469
