@@ -99,6 +99,23 @@ Refer to the corresponding files in results/, ablations/, and paper_tables/ for 
 
 ---
 
+
+
+## Expected Dataset Structure
+
+data/
+└── MIntRec/
+    ├── train1.tsv
+    ├── dev1.tsv
+    ├── test1.tsv
+    ├── text_embedding.pkl
+    ├── audio_embeddings_tensor.pkl
+    └── Dinov2_embedding.pkl
+
+The implementation expects the processed multimodal embeddings and dataset splits to be placed under the data/MIntRec/ directory following the structure above.
+
+---
+
 ## Included Analyses
 
 - Class-wise Analysis
